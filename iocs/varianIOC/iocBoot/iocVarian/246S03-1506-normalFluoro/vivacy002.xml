@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Camera_Interface_Application>
+
+  <camera mac="" name="New Device 1" type="Standard CameraLink Camera">
+    <connectivity>
+      <mode>MODE_DRV</mode>
+      <address></address>
+      <packet_size>8128</packet_size>
+      <adapter_id></adapter_id>
+      <timeouts>
+        <answer>1000</answer>
+        <first_packet>0</first_packet>
+        <packet>500</packet>
+        <request>5000</request>
+      </timeouts>
+      <multicast enabled="false" master="false"></multicast>
+      <channels>
+        <channel id="0" name="Channel 0"/>
+      </channels>
+    </connectivity>
+    <iPORT>
+      <image_type>area scan</image_type>
+      <windowing>
+        <size_x>1536</size_x>
+        <size_y>1920</size_y>
+        <offset_x>0</offset_x>
+        <offset_y>0</offset_y>
+        <binning_x>1</binning_x>
+        <binning_y>1</binning_y>
+        <decimation_x>1</decimation_x>
+        <decimation_y>1</decimation_y>
+      </windowing>
+      <pixel_type_id>65541</pixel_type_id>
+      <tap_quantity>1</tap_quantity>
+      <black_Level>0</black_Level>
+      <synchronization_mode>free run programmable</synchronization_mode>
+      <exposure_time>1</exposure_time>
+      <frame_rate>0.1</frame_rate>
+      <gains_and_offsets quantity="0"/>
+      <digital_shift>0</digital_shift>
+      <test_pattern>0</test_pattern>
+      <flip_image>false</flip_image>
+      <grabber>
+        <triggering id="0">
+          <force_single_shot>false</force_single_shot>
+          <frame_skip>0</frame_skip>
+          <gpio_trigger>false</gpio_trigger>
+          <auto_internal_retrigger>false</auto_internal_retrigger>
+          <pipe_count>2</pipe_count>
+        </triggering>
+        <test_pattern>false</test_pattern>
+        <water_level>0</water_level>
+        <pixel_shifting>0</pixel_shifting>
+        <port_mapping>0</port_mapping>
+        <pixel_inversion>false</pixel_inversion>
+        <bad_images_passthrough>false</bad_images_passthrough>
+        <ignore_missing_packets>false</ignore_missing_packets>
+        <interlaced_field_mode>0</interlaced_field_mode>
+        <input_output>
+          <pulse_generator id="0">
+            <delay>65104</delay>
+            <width>65104</width>
+            <granularity>255</granularity>
+            <periodic>true</periodic>
+            <trigger_mode>0</trigger_mode>
+          </pulse_generator>
+          <pulse_generator id="1">
+            <delay>1024</delay>
+            <width>4096</width>
+            <granularity>0</granularity>
+            <periodic>false</periodic>
+            <trigger_mode>0</trigger_mode>
+          </pulse_generator>
+          <GPIO>
+            <look_up_table></look_up_table>
+            <input0>0</input0>
+            <input1>0</input1>
+            <input2>1</input2>
+            <input3>1</input3>
+            <input4>0</input4>
+            <input5>0</input5>
+            <input6>0</input6>
+            <input7>0</input7>
+          </GPIO>
+        </input_output>
+      </grabber>
+    </iPORT>
+    <camera_link>
+      <camera_link_data_valid_enabled>false</camera_link_data_valid_enabled>
+      <camera_link_serial_select>UART0</camera_link_serial_select>
+      <camera_link_data_valid_polarity>false</camera_link_data_valid_polarity>
+      <camera_link_line_valid_polarity>false</camera_link_line_valid_polarity>
+      <camera_link_frame_valid_polarity>false</camera_link_frame_valid_polarity>
+      <camera_link_line_valid_edge_sensitive>false</camera_link_line_valid_edge_sensitive>
+      <camera_link_frame_valid_edge_sensitive>false</camera_link_frame_valid_edge_sensitive>
+      <camera_link_frame_valid_function_select>0</camera_link_frame_valid_function_select>
+      <camera_link_line_valid_function_select>0</camera_link_line_valid_function_select>
+    </camera_link>
+  </camera>
+
+</Camera_Interface_Application>

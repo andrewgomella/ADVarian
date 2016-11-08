@@ -1,0 +1,36 @@
+
+2016-03-15T13:35:10.778888-05:00
+0.001 --- 
+HcpImgAcq is loaded
+0.001 --- [16252]
+HcpRecCtrl is loaded
+0.002 --- [16252]
+HcpCorrections is loaded
+0.002 --- [16252]
+HcpCalibration is loaded
+0.002 --- [16252]
+VirtCp is loaded
+0.003 --- [16252]AC: RcSelectReceptorPtr=73917D70
+0.003 --- [16252]AC: Get pointer to query_prog_info
+0.003 --- [16252]AC: vip_ac_open_link returns
+0.003 --- [16256]IO: MonitorThread started CIoDrive=0x003D3F80
+0.003 --- [16256]IO: Calling MonitorLp
+0.003 --- [16256]IO: MonitorLp
+0.014 --- [16252]RP: FgGetImage=73831CB0
+0.014 --- [16252]RP: FgFluoroGetPrms=73832140
+0.015 --- [16252]FG: open_receptor_link CALLED
+0.015 --- [16252]FG: EventRecName=ammo
+0.015 --- [16252]FG: DevInitImagingSystem
+2016-03-15T13:35:10.792889-05:00
+0.015 --- FG: XML file not used. MaxIgnored=10
+8.683 --- [16252]FG: All driver modes failed
+9.183 --- [16252]FG: No Pleora IP engine found
+9.183 --- [16252]FG: Code -- 20; ErrMsg: No devices were found; Pleora source file: ..\Sources\CyDeviceFinder.cpp; line 2104; system code 0
+9.187 --- [16252]FG: Bad Image PassThrough is OFF
+9.187 --- [16252]AC: vip_ac_close_link called
+9.287 --- [16252]IO: IoEnable(0)
+9.287 --- [16252]IO: StopMonitorThread: m_threadsRunning=1
+9.287 --- [16256]IO: MonitorThread ending
+9.387 --- [16252]RP: vip_rp_close_link CALLED
+9.387 --- [16252]FG: close_link CALLED
+9.438 --- [16252]MC: EXIT vip_open_receptor_link()

@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Attributes -->
+<Attributes
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://epics.aps.anl.gov/areaDetector/attributes ../attributes.xsd"
+    >
+     <!-- camera information -->
+    <Attribute name="Image No.;"                    type="PARAM"    source="ARRAY_COUNTER"  datatype="INT"        description="Image counter"/>
+    <Attribute name="MaxSizeX;"                     type="PARAM"    source="MAX_SIZE_X"     datatype="INT"        description="Detector X size"/>
+    <Attribute name="MaxSizeY;"                     type="PARAM"    source="MAX_SIZE_Y"     datatype="INT"        description="Detector Y size"/>
+    <Attribute name="Camera Model;"                 type="PARAM"    source="MODEL"          datatype="STRING"     description="Camera model"/>
+    <Attribute name="Camera Manf;"                  type="PARAM"    source="MANUFACTURER"   datatype="STRING"     description="Camera manufacturer"/>
+    <Attribute name="Camera Exp time;RAD:VARIAN:cam1:AcquireTime_RBV;"     type="EPICS_PV" source="RAD:VARIAN:cam1:AcquireTime_RBV"    dbrtype="DBR_NATIVE"  description="Varian ExpLength Sec"/>
+    <!-- motor information -->
+    <Attribute name="Samp:z (mm);RAD:NEWPORT:m1;"   type="EPICS_PV" source="RAD:NEWPORT:m1.RBV"  dbrtype="DBR_NATIVE"  description="Sample z position"/>
+    <Attribute name="Samp:x (mm);RAD:NEWPORT:m2;"   type="EPICS_PV" source="RAD:NEWPORT:m2.RBV"  dbrtype="DBR_NATIVE"  description="Sample x position"/>
+    <Attribute name="Samp:y (mm);RAD:NEWPORT:m3;"   type="EPICS_PV" source="RAD:NEW ORT:m3.RBV"  dbrtype="DBR_NATIVE"  description="Sample y position"/>
+    <Attribute name="Samp:Rz (deg);RAD:NEWPORT:m4;" type="EPICS_PV" source="RAD:NEWPORT:m4.RBV"  dbrtype="DBR_NATIVE"  description="Sample Rz position"/>
+    <Attribute name="Samp:Rx (deg);RAD:NEWPORT:m5;" type="EPICS_PV" source="RAD:NEWPORT:m5.RBV"  dbrtype="DBR_NATIVE"  description="Sample Rx position"/>
+    <Attribute name="Samp:Ry (deg);RAD:NEWPORT:m6;" type="EPICS_PV" source="RAD:NEWPORT:m6.RBV"  dbrtype="DBR_NATIVE"  description="Sample Ry position"/>
+     <!-- xray information -->
+    <Attribute name="X-ray kVp;RAD:OXFORD:xray:KVP_MIN;"  type="EPICS_PV" source="RAD:OXFORD:xray:KVP_MIN"  dbrtype="DBR_NATIVE"  description="X-ray KVP"/>
+    <Attribute name="X-ray W;RAD:OXFORD:xray:WATT_MIN;"   type="EPICS_PV" source="RAD:OXFORD:xray:WATT_MIN" dbrtype="DBR_NATIVE"  description="X-ray Wattage"/>
+    <!-- experiment information -->
+    <Attribute name="Sample ID;RAD:SAMPLE_ID_RBV;"         type="EPICS_PV" source="RAD:SAMPLE_ID_RBV"       dbrtype="DBR_NATIVE"  description="Sample Identifier"/>
+    <Attribute name="Phosphor Type;RAD:PHOSPHOR_TYPE_RBV;" type="EPICS_PV" source="RAD:PHOSPHOR_TYPE_RBV"   dbrtype="DBR_NATIVE"  description="Type of Phosphor"/>
+    <Attribute name="Source to Detector distance (mm);RAD:SDD_RBV;"    type="EPICS_PV" source="RAD:SDD_RBV"                     dbrtype="DBR_NATIVE"  description="Source to Detector distance"/>
+    <Attribute name="Source to Sample distance (mm);RAD:SSD_RBV;"    type="EPICS_PV" source="RAD:SSD_RBV"                     dbrtype="DBR_NATIVE"  description="Source to Sample distance"/>
+    <Attribute name="Additional Comments;RAD:METADATA_1;"              type="EPICS_PV" source="RAD:METADATA_1_RBV"           dbrtype="DBR_NATIVE"  description="Additional acquisition comments/information"/>
+    <Attribute name="Investigator;RAD:INVESTIGATOR_RBV;"               type="EPICS_PV" source="RAD:INVESTIGATOR_RBV"            dbrtype="DBR_NATIVE"  description="Investigator ID"/>
+
+</Attributes>

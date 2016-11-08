@@ -1,0 +1,385 @@
+
+2015-08-09T00:16:35.701102-05:00
+0.001 --- 
+HcpImgAcq is loaded
+0.002 --- [11624]
+HcpRecCtrl is loaded
+0.003 --- [11624]
+HcpCorrections is loaded
+0.004 --- [11624]
+HcpCalibration is loaded
+0.004 --- [11624]
+VirtCp is loaded
+0.005 --- [11624]AC: RcSelectReceptorPtr=74197D70
+0.005 --- [11624]AC: Get pointer to query_prog_info
+0.005 --- [11624]AC: vip_ac_open_link returns
+0.005 --- [12396]IO: MonitorThread started CIoDrive=0x00355100
+0.005 --- [12396]IO: Calling MonitorLp
+0.005 --- [12396]IO: MonitorLp
+0.020 --- [11624]RP: FgGetImage=6CFD1CB0
+0.020 --- [11624]RP: FgFluoroGetPrms=6CFD2140
+0.020 --- [11624]FG: open_receptor_link CALLED
+0.020 --- [11624]FG: EventRecName=246S03-1506
+0.020 --- [11624]FG: DevInitImagingSystem
+2015-08-09T00:16:35.720103-05:00
+0.020 --- FG: XML file not used. MaxIgnored=10
+0.327 --- [11624]FG: PERFORM driver found
+0.327 --- [11624]FG: driver path - C:\Windows\system32\DRIVERS\Pro1000.sys
+0.327 --- [11624]FG: Driver version minimum - 3.3.1.1684; driver found - 3.3.6.2302
+0.329 --- [11624]FG: Using the default IP address: [192.168.2.34]
+0.329 --- [11624]FG: Not using xml file; creating default configuration.
+0.330 --- [11624]FG: ENTER PlrGrabber->Connect()
+1.011 --- [11624]FG: EXIT PlrGrabber->Connect() - code 0
+1.021 --- [11624]FG: Set grabber defaults
+1.034 --- [11624]FG: Bad Image PassThrough is OFF
+1.608 --- [11624]FG: WriteGPIO - set=0; clear=15
+1.610 --- [11624]FG: granular=2; width=11us
+1.610 --- [11624]FG: EventName created = Hcp_246S03-1506_00 for idx=0
+1.611 --- [11624]FG: EventName created = Hcp_246S03-1506_02 for idx=2
+1.611 --- [11624]FG: EventName created = Hcp_246S03-1506_01 for idx=1
+1.611 --- [11624]RP: vip_rp_init_config CALLED; configData=0x026ce260; numModes=5
+2015-08-09T00:16:37.311194-05:00
+1.611 --- RP: vip_rp_init_config CALLED; configData=0x026ce260; numModes=5
+1.611 --- [11624]RP: vip_rp_get_rec_specific_info CALLED; mode=0
+1.611 --- [11624]RP: vip_rp_get_rec_specific_info CALLED; mode=1
+1.611 --- [11624]RP: vip_rp_get_rec_specific_info CALLED; mode=2
+1.611 --- [11624]RP: vip_rp_get_rec_specific_info CALLED; mode=3
+1.611 --- [11624]RP: vip_rp_get_rec_specific_info CALLED; mode=4
+1.611 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+1.700 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=1
+1.797 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=2
+2.069 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=3
+2.159 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=4
+2.179 --- [11624]AC: vip_ac_io_get_dll_version called
+2.179 --- [11624]IO: vip_io_get_dll_version
+2.179 --- [11624]RP: vip_rp_get_dll_version CALLED
+2.179 --- [11624]CA: vip_ca_get_dll_version CALLED
+2.179 --- [11624]MC: Dll version VirtCp64 -- Rev L.06, Build 620; Oct  3 2013 16:39:02
+2015-08-09T00:16:37.879226-05:00
+2.179 --- MC: Dll version HcpImgAcq64 -- Rev L.06, Build 620;  Oct  3 2013, 16:39:08
+2.179 --- [11624]MC: Dll version HcpIoRad64 -- Rev L06.0.1, Build 621;  Nov 19 2013, 10:36:19
+2.179 --- [11624]MC: Dll version HcpRecCtrl -- Rev L.06, Build 620;  Oct  3 2013, 16:38:57
+2.179 --- [11624]MC: Dll version HcpRpRad64 -- Rev L.06, Build 620;  Oct  3 2013, 16:38:39
+2.179 --- [11624]MC: Dll version HcpFgExPleora64 -- Rev L.06, Build 620;  Oct  3 2013, 16:39:13
+2.179 --- [11624]MC: Dll version Pleora Info -- Fw-5.05.02;Device-7;Module-6.97;Driver-PERFORM3.3.6.2302
+2.179 --- [11624]MC: Dll version HcpCorrections64 -- Rev L.06,  Build 620;  Oct  3 2013, 16:39:16
+2.179 --- [11624]MC: Dll version Corrections64 -- Rev L.06, Build 620;  Oct  3 2013, 16:38:26
+2.179 --- [11624]MC: Dll version HcpCalibration64 -- Rev L.06, Build 620;  Oct  3 2013, 16:39:23
+2.179 --- [11624]MC: Dll version  -- 
+2.179 --- [11624]AC: vip_ac_set_hw_config called
+2.179 --- [11624]RP: vip_rp_set_hw_config CALLED
+2.179 --- [11624]FG: set_hw_config CALLED
+2.179 --- [11624]CA: vip_ca_set_hw_config CALLED
+2.179 --- [11624]CA: GFrmStartAvailable=0
+2.179 --- [11624]RP: vip_rp_select_mode CALLED; mode=0
+2015-08-09T00:16:37.879226-05:00
+2.179 --- RP: mode=0 g_fluoroModeSelected=0
+2.179 --- [11624]RP: SetRadModeInfo(mode=0, fluoro=0, totalImages=1)
+2.179 --- [11624]RP: Send cmd 8 0
+2.179 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+2.179 --- [11624]FG: Calling PlrSerialTransmit with 5 bytes
+2.233 --- [11624]FG: 8N1-19200
+2.283 --- [11624]serial: radctrl 0
+2.390 --- [11624]Received answer: 2
+2.390 --- [11624]RP: Success to send command 0
+2.390 --- [11624]RP: SetRadModeInfo: image (3584, 2816) = 10092544
+2.390 --- [11624]RP: Allocated offsetBuffer[10092544]
+2.390 --- [11624]Setting up receptor; please wait
+2.390 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+2.390 --- [11624]FG: Calling PlrSerialTransmit with 5 bytes
+2.390 --- [11624]serial: stop 1
+2.396 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=147; accum=147
+2015-08-09T00:16:38.096239-05:00
+2.396 --- FG: Calling PlrSerialTransmit with 147 bytes
+2.568 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=147; accum=147
+2.568 --- [11624]FG: Calling PlrSerialTransmit with 147 bytes
+2.741 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=147; accum=147
+2.751 --- [11624]FG: Calling PlrSerialTransmit with 147 bytes
+2.923 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=147; accum=147
+2.923 --- [11624]FG: Calling PlrSerialTransmit with 147 bytes
+3.093 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=147; accum=147
+3.093 --- [11624]FG: Calling PlrSerialTransmit with 147 bytes
+3.268 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+3.268 --- [11624]FG: DevCheckConnectStatus() status = PENDING
+3.269 --- [11624]FG: Calling PlrSerialTransmit with 5 bytes
+3.269 --- [11624]serial: select 1
+3.275 --- [11624]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+3.275 --- [11624]FG: Calling PlrSerialTransmit with 5 bytes
+3.275 --- [11624]serial: run 1
+2015-08-09T00:16:38.980289-05:00
+3.280 --- RP: Frame Size is 3584 x 2816
+3.280 --- [11624]RP: Config data is 14 0 7 0 11 0 70 37 7 128 13 207 1 249
+3.280 --- [11624]FG: DevDataTransmit: buffer=0x002be890; len=14; accum=14
+3.568 --- [11624]FG: Calling PlrSerialTransmit with 14 bytes
+3.568 --- [11624]serial (ignored): 0e 00 07 ..
+3.854 --- [11624]FG: fluoro_init_mode CALLED
+3.906 --- [11624]FG: WriteGPIO - set=1; clear=0
+4.007 --- [11624]FG: WriteGPIO - set=0; clear=1
+4.007 --- [11624]FG: set_frame_rate CALLED
+4.007 --- [11624]FG: CheckForFixedFrameRate() fRate=0.401
+4.007 --- [11624]FG: CheckForFixedFrameRate() oK=0
+4.007 --- [11624]FG: EventName created = Hcp_246S03-1506_03 for idx=3
+4.007 --- [2024]FG: Starting FrameStartThread() - period=2496ms
+4.217 --- [2024]FG: WriteGPIO - set=0; clear=8
+4.217 --- [2024]FG: FrameStartThread - Sleep 1248
+4.297 --- [11624]FG: Setting frame rate 0.401
+2015-08-09T00:16:39.997347-05:00
+4.297 --- FG: Minimum Pleora frame rate violated - Host CPU generating frame starts
+4.299 --- [11624]FG: granular=255; halfWidth=65535
+4.350 --- [11624]FG: WriteGPIO - set=1; clear=0
+4.451 --- [11624]FG: WriteGPIO - set=0; clear=1
+4.451 --- [11624]FG: set_user_sync CALLED
+4.452 --- [11624]FG: fluoro_set_prms CALLED
+4.452 --- [11624]FG: Seq Buffer[0] allocated with ptr=0x20ae0040
+4.452 --- [11624]FG: Seq Buffer[1] allocated with ptr=0x21e30040
+4.452 --- [11624]FG: Seq Buffer[2] allocated with ptr=0x23180040
+4.452 --- [11624]FG: Seq Buffer[3] allocated with ptr=0x244d0040
+4.452 --- [11624]FG: Seq Buffer[4] allocated with ptr=0x25820040
+4.452 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+4.452 --- [11624]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+4.452 --- [11624]CR: base_select_mode() entered
+4.452 --- [11624]CA: vip_ca_select_mode CALLED: mode=0
+4.452 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+2015-08-09T00:16:40.152356-05:00
+4.452 --- RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+4.452 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+4.452 --- [11624]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+4.452 --- [11624]CR: base_select_mode() entered
+4.452 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+4.452 --- [11624]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+4.452 --- [11624]CR: base_select_mode() entered
+4.452 --- [11624]CR: vip_set_correction_settings() CALLED; Ofst=1; Gain=1; Dfct=1; Rotate90=0; FlipX=0, FlipY=0
+4.452 --- [11624]CR: base_set_correction_settings() entered
+4.452 --- [11624]CR: base_set_correction_settings() entered
+4.452 --- [11624]CR: base_set_correction_settings() entered
+4.452 --- [11624]CR: base_set_correction_settings() entered
+4.452 --- [11624]CR: base_set_correction_settings() entered
+4.452 --- [11624]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+4.452 --- [11624]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+4.452 --- [11624]CR: base_select_mode() entered
+2015-08-09T00:16:40.152356-05:00
+4.452 --- MC: EXIT vip_open_receptor_link()
+4.652 --- [11624]AC: vip_ac_select_mode(7471215)
+4.652 --- [11624]AC: vip_ac_query_prog_info(32771)
+4.652 --- [11624]IO: query_prog_info 32771
+4.652 --- [11624]
+4.653 --- [11624]AC: vip_ac_reset_state called
+4.653 --- [11624]IO: vip_io_reset_state
+4.653 --- [11624]IO: IoEnable(0)
+4.653 --- [11624]CIoDrive::ResetState exit
+4.653 --- [11624]FG: reset_state CALLED
+4.653 --- [11624]FG: fluoro_grabber_stop CALLED
+4.653 --- [11624]FG: In VexGrabberStop() - AlreadyStopped
+4.653 --- [11624]CR: base_reset_state() entered
+4.653 --- [11624]CA: vip_ca_reset_state CALLED
+5.338 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.348 --- [10892]AC: vip_ac_query_prog_info(32773)
+2015-08-09T00:16:41.048408-05:00
+5.348 --- IO: query_prog_info 32773
+5.348 --- [10892]
+5.466 --- [2024]FG: WriteGPIO - set=8; clear=0
+5.466 --- [2024]FG: FrameStartThread - Sleep 1248
+5.864 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.874 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.874 --- [10892]IO: query_prog_info 32773
+5.874 --- [10892]
+5.874 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.884 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.884 --- [10892]IO: query_prog_info 32773
+5.884 --- [10892]
+5.884 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.894 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.894 --- [10892]IO: query_prog_info 32773
+5.894 --- [10892]
+2015-08-09T00:16:41.594439-05:00
+5.894 --- AC: nF=0 C=0 nP=0 rfp=0 0
+5.904 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.904 --- [10892]IO: query_prog_info 32773
+5.904 --- [10892]
+5.904 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.914 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.914 --- [10892]IO: query_prog_info 32773
+5.914 --- [10892]
+5.914 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.924 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.924 --- [10892]IO: query_prog_info 32773
+5.924 --- [10892]
+5.924 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.934 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.934 --- [10892]IO: query_prog_info 32773
+5.934 --- [10892]
+2015-08-09T00:16:41.634441-05:00
+5.934 --- AC: nF=0 C=0 nP=0 rfp=0 0
+5.944 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.944 --- [10892]IO: query_prog_info 32773
+5.944 --- [10892]
+5.944 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.954 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.954 --- [10892]IO: query_prog_info 32773
+5.954 --- [10892]
+5.954 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.964 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.964 --- [10892]IO: query_prog_info 32773
+5.964 --- [10892]
+5.964 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.974 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.974 --- [10892]IO: query_prog_info 32773
+5.974 --- [10892]
+2015-08-09T00:16:41.674443-05:00
+5.974 --- AC: nF=0 C=0 nP=0 rfp=0 0
+5.984 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.984 --- [10892]IO: query_prog_info 32773
+5.984 --- [10892]
+5.984 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+5.994 --- [10892]AC: vip_ac_query_prog_info(32773)
+5.994 --- [10892]IO: query_prog_info 32773
+5.994 --- [10892]
+5.994 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.004 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.004 --- [10892]IO: query_prog_info 32773
+6.004 --- [10892]
+6.004 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.014 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.014 --- [10892]IO: query_prog_info 32773
+6.014 --- [10892]
+2015-08-09T00:16:41.714446-05:00
+6.014 --- AC: nF=0 C=0 nP=0 rfp=0 0
+6.024 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.024 --- [10892]IO: query_prog_info 32773
+6.024 --- [10892]
+6.024 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.034 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.034 --- [10892]IO: query_prog_info 32773
+6.034 --- [10892]
+6.034 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.044 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.044 --- [10892]IO: query_prog_info 32773
+6.044 --- [10892]
+6.044 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.054 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.054 --- [10892]IO: query_prog_info 32773
+6.054 --- [10892]
+2015-08-09T00:16:41.754448-05:00
+6.054 --- AC: nF=0 C=0 nP=0 rfp=0 0
+6.064 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.064 --- [10892]IO: query_prog_info 32773
+6.064 --- [10892]
+6.064 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.074 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.074 --- [10892]IO: query_prog_info 32773
+6.074 --- [10892]
+6.074 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.084 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.084 --- [10892]IO: query_prog_info 32773
+6.084 --- [10892]
+6.084 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.094 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.094 --- [10892]IO: query_prog_info 32773
+6.094 --- [10892]
+2015-08-09T00:16:41.794450-05:00
+6.094 --- AC: nF=0 C=0 nP=0 rfp=0 0
+6.104 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.104 --- [10892]IO: query_prog_info 32773
+6.104 --- [10892]
+6.104 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.114 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.114 --- [10892]IO: query_prog_info 32773
+6.114 --- [10892]
+6.114 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.124 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.124 --- [10892]IO: query_prog_info 32773
+6.124 --- [10892]
+6.124 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.134 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.134 --- [10892]IO: query_prog_info 32773
+6.134 --- [10892]
+2015-08-09T00:16:41.834453-05:00
+6.134 --- AC: nF=0 C=0 nP=0 rfp=0 0
+6.144 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.144 --- [10892]IO: query_prog_info 32773
+6.144 --- [10892]
+6.144 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.154 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.154 --- [10892]IO: query_prog_info 32773
+6.154 --- [10892]
+6.154 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.164 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.164 --- [10892]IO: query_prog_info 32773
+6.164 --- [10892]
+6.164 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.174 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.174 --- [10892]IO: query_prog_info 32773
+6.174 --- [10892]
+2015-08-09T00:16:41.874455-05:00
+6.174 --- AC: nF=0 C=0 nP=0 rfp=0 0
+6.184 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.184 --- [10892]IO: query_prog_info 32773
+6.184 --- [10892]
+6.184 --- [10892]AC: vip_ac_select_mode(1)
+6.184 --- [10892]AC: Setting m_numFramesToGet=1
+6.184 --- [10892]RP: vip_rp_select_mode CALLED; mode=1
+6.184 --- [10892]RP: mode=1 g_fluoroModeSelected=0
+6.184 --- [10892]RP: SetRadModeInfo(mode=1, fluoro=0, totalImages=2)
+6.184 --- [10892]RP: Send cmd 8 0
+6.184 --- [10892]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+6.184 --- [10892]FG: Calling PlrSerialTransmit with 5 bytes
+6.184 --- [10892]serial: radctrl 0
+6.292 --- [10892]Received answer: 2
+6.292 --- [10892]RP: Success to send command 0
+6.292 --- [10892]RP: SetRadModeInfo: image (3584, 2816) = 10092544
+2015-08-09T00:16:41.992462-05:00
+6.292 --- RP: Allocated offsetBuffer[10092544]
+6.292 --- [10892]Setting up receptor; please wait
+6.292 --- [10892]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+6.292 --- [10892]FG: Calling PlrSerialTransmit with 5 bytes
+6.292 --- [10892]serial: stop 2
+6.297 --- [10892]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+6.297 --- [10892]FG: Calling PlrSerialTransmit with 5 bytes
+6.297 --- [10892]serial: select 2
+6.303 --- [10892]FG: DevDataTransmit: buffer=0x0035dd20; len=5; accum=5
+6.303 --- [10892]FG: Calling PlrSerialTransmit with 5 bytes
+6.303 --- [10892]serial: run 2
+6.309 --- [10892]FG: fluoro_init_mode CALLED
+6.360 --- [10892]FG: WriteGPIO - set=1; clear=0
+6.461 --- [10892]FG: WriteGPIO - set=0; clear=1
+6.461 --- [10892]FG: set_frame_rate CALLED
+6.461 --- [10892]FG: set_user_sync CALLED
+2015-08-09T00:16:42.171472-05:00
+6.471 --- FG: fluoro_set_prms CALLED
+6.471 --- [10892]RP: vip_rp_get_mode_info_ex CALLED; mode=1
+6.471 --- [10892]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+6.471 --- [10892]CR: base_select_mode() entered
+6.471 --- [10892]CA: vip_ca_select_mode CALLED: mode=1
+6.471 --- [10892]RP: vip_rp_get_mode_info_ex CALLED; mode=1
+6.471 --- [10892]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+6.471 --- [10892]FG: set_frame_rate CALLED
+6.471 --- [10892]FG: CheckForFixedFrameRate() fRate=1.000
+6.471 --- [10892]FG: CheckForFixedFrameRate() oK=0
+6.751 --- [10892]FG: Setting frame rate 1.000
+6.754 --- [10892]FG: granular=254; halfWidth=65359
+6.805 --- [10892]FG: WriteGPIO - set=1; clear=0
+6.906 --- [10892]FG: WriteGPIO - set=0; clear=1
+6.906 --- [10892]CA: vip_ca_set_frame_rate CALLED: fRate=1.000
+6.906 --- [10892]
+****  base_get_cal_info() entered
+2015-08-09T00:16:42.606497-05:00
+6.906 --- RP: vip_rp_get_mode_info_ex CALLED; mode=1
+6.906 --- [10892]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+6.906 --- [10892]CR: base_select_mode() entered
+6.906 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.916 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.916 --- [10892]IO: query_prog_info 32773
+6.916 --- [10892]
+6.916 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.926 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.926 --- [10892]IO: query_prog_info 32773
+6.926 --- [10892]
+6.926 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+6.936 --- [10892]AC: vip_ac_query_prog_info(32773)
+6.936 --- [10892]IO: query_prog_info 32773
+6.936 --- [10892]
+6.936 --- [10892]AC: nF=0 C=0 nP=0 rfp=0 0
+2015-08-09T00:16:42.646499-05:00
+6.946 --- AC: vip_ac_query_prog_info(32773)
+6.946 --- [10892]IO: query_prog_info 32773
+6.946 --- [10892]

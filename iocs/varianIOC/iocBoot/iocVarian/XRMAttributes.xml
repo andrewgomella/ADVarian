@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Attributes -->
+<Attributes
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://epics.aps.anl.gov/areaDetector/attributes ../attributes.xsd"
+    >
+     <!-- camera information -->
+    <Attribute name="Image No.;"                                           type="PARAM"    source="ARRAY_COUNTER"                   datatype="INT"        description="Image counter"/>
+    <Attribute name="MaxSizeX;"                                            type="PARAM"    source="MAX_SIZE_X"                      datatype="INT"        description="Detector X size"/>
+    <Attribute name="MaxSizeY;"                                            type="PARAM"    source="MAX_SIZE_Y"                      datatype="INT"        description="Detector Y size"/>
+    <Attribute name="Camera Model;"                                        type="PARAM"    source="MODEL"                           datatype="STRING"     description="Camera model"/>
+    <Attribute name="Camera Manf;"                                         type="PARAM"    source="MANUFACTURER"                    datatype="STRING"     description="Camera manufacturer"/>
+    <Attribute name="Camera Exp time;XRM:VARIAN:cam1:AcquireTime_RBV;"     type="EPICS_PV" source="XRM:VARIAN:cam1:AcquireTime_RBV" dbrtype="DBR_NATIVE"  description="Varian ExpLength Sec"/>
+    <!-- motor information -->
+    <Attribute name="Lens:z (mm);XRM:NEWPORT:m1;"                          type="EPICS_PV" source="XRM:NEWPORT:m1.RBV"              dbrtype="DBR_NATIVE"  description="Lens z position"/>
+    <Attribute name="Lens:x (mm);XRM:NEWPORT:m2;"                          type="EPICS_PV" source="XRM:NEWPORT:m2.RBV"              dbrtype="DBR_NATIVE"  description="Lens x position"/>
+    <Attribute name="Lens:y (mm);XRM:NEWPORT:m3;"                          type="EPICS_PV" source="XRM:NEWPORT:m3.RBV"              dbrtype="DBR_NATIVE"  description="Lens y position"/>
+    <Attribute name="Lens:Rz (deg);XRM:NEWPORT:m4;"                        type="EPICS_PV" source="XRM:NEWPORT:m4.RBV"              dbrtype="DBR_NATIVE"  description="Lens Rz position"/>
+    <Attribute name="Lens:Rx (deg);XRM:NEWPORT:m5;"                        type="EPICS_PV" source="XRM:NEWPORT:m5.RBV"              dbrtype="DBR_NATIVE"  description="Lens Rx position"/>
+    <Attribute name="Lens:Ry (deg);XRM:NEWPORT:m6;"                        type="EPICS_PV" source="XRM:NEWPORT:m6.RBV"              dbrtype="DBR_NATIVE"  description="Lens Ry position"/>
+    <!-- xray information -->
+    <Attribute name="X-ray (kVp);XRM:OXFORD:xray:KVP_MIN;"                 type="EPICS_PV" source="XRM:OXFORD:xray:KVP_MIN"          dbrtype="DBR_NATIVE"  description="X-ray KVP"/>
+    <Attribute name="X-ray (W);XRM:OXFORD:xray:WATT_MIN;"                  type="EPICS_PV" source="XRM:OXFORD:xray:WATT_MIN"         dbrtype="DBR_NATIVE"  description="X-ray Power"/>
+    <Attribute name="X-ray (ms);XRM:OXFORD:xray:MS_RBV;"                   type="EPICS_PV" source="XRM:OXFORD:xray:MS_RBV"           dbrtype="DBR_NATIVE"  description="X-ray Exposure time"/>
+    <Attribute name="X-ray (mAs);XRM:OXFORD:xray:MAS_RBV;"                 type="EPICS_PV" source="XRM:OXFORD:xray:MAS_RBV"          dbrtype="DBR_NATIVE"  description="X-ray Flux Rate"/>
+    <!-- scan information -->
+    <Attribute name="Scan 1 PV;XRM:SCAN:scan1.P1PV;"                       type="EPICS_PV" source="XRM:SCAN:scan1.P1PV"             dbrtype="DBR_NATIVE"   description="Scan 1 Positioner"/>
+    <Attribute name="Scan 2 PV;XRM:SCAN:scan2.P1PV;"                       type="EPICS_PV" source="XRM:SCAN:scan2.P1PV"             dbrtype="DBR_NATIVE"   description="Scan 2 Positioner"/>
+    <Attribute name="Scan 3 PV;XRM:SCAN:scan3.P1PV;"                       type="EPICS_PV" source="XRM:SCAN:scan3.P1PV"             dbrtype="DBR_NATIVE"   description="Scan 3 Positioner"/>
+
+    <Attribute name="Scan 1 Pos Delay;XRM:SCAN:scan1.PDLY;"                type="EPICS_PV" source="XRM:SCAN:scan1.PDLY"             dbrtype="DBR_NATIVE"   description="Scan 1 Settle"/>
+    <Attribute name="Scan 2 Pos Delay;XRM:SCAN:scan2.PDLY;"                type="EPICS_PV" source="XRM:SCAN:scan2.PDLY"             dbrtype="DBR_NATIVE"   description="Scan 2 Settle"/>
+    <Attribute name="Scan 3 Pos Delay;XRM:SCAN:scan3.PDLY;"                type="EPICS_PV" source="XRM:SCAN:scan3.PDLY"             dbrtype="DBR_NATIVE"   description="Scan 3 Settle"/>
+
+    <Attribute name="Scan 1 Step (mm);XRM:SCAN:scan1.P1SI;"                type="EPICS_PV" source="XRM:SCAN:scan1.P1SI"             dbrtype="DBR_NATIVE"   description="Scan 1 Step"/>
+    <Attribute name="Scan 2 Step (mm);XRM:SCAN:scan2.P1SI;"                type="EPICS_PV" source="XRM:SCAN:scan2.P1SI"             dbrtype="DBR_NATIVE"   description="Scan 2 Step"/>
+    <Attribute name="Scan 3 Step (mm);XRM:SCAN:scan3.P1SI;"                type="EPICS_PV" source="XRM:SCAN:scan3.P1SI"             dbrtype="DBR_NATIVE"   description="Scan 3 Step"/>
+
+    <Attribute name="Scan 1 Start;XRM:SCAN:scan1.P1SP;"                    type="EPICS_PV" source="XRM:SCAN:scan1.P1SP"             dbrtype="DBR_NATIVE"   description="Scan 1 Start"/>
+    <Attribute name="Scan 2 Start;XRM:SCAN:scan2.P1SP;"                    type="EPICS_PV" source="XRM:SCAN:scan2.P1SP"             dbrtype="DBR_NATIVE"   description="Scan 2 Start"/>
+    <Attribute name="Scan 3 Start;XRM:SCAN:scan3.P1SP;"                    type="EPICS_PV" source="XRM:SCAN:scan3.P1SP"             dbrtype="DBR_NATIVE"   description="Scan 3 Start"/>
+
+    <Attribute name="Scan 1 End;XRM:SCAN:scan1.P1EP;"                      type="EPICS_PV" source="XRM:SCAN:scan1.P1EP"             dbrtype="DBR_NATIVE"   description="Scan 1 End"/>
+    <Attribute name="Scan 2 End;XRM:SCAN:scan2.P1EP;"                      type="EPICS_PV" source="XRM:SCAN:scan2.P1EP"             dbrtype="DBR_NATIVE"   description="Scan 2 End"/>
+    <Attribute name="Scan 3 End;XRM:SCAN:scan3.P1EP;"                      type="EPICS_PV" source="XRM:SCAN:scan3.P1EP"             dbrtype="DBR_NATIVE"   description="Scan 3 End"/>
+
+    <Attribute name="Scan 1 Position (mm);XRM:SCAN:scan1.CPT;"             type="EPICS_PV" source="XRM:SCAN:scan1.CPT"              dbrtype="DBR_NATIVE"   description="Scan 1 Current Position"/>
+    <Attribute name="Scan 2 Position (mm);XRM:SCAN:scan2.CPT;"             type="EPICS_PV" source="XRM:SCAN:scan2.CPT"              dbrtype="DBR_NATIVE"   description="Scan 2 Current Position"/>
+    <Attribute name="Scan 3 Position (mm);XRM:SCAN:scan3.CPT;"             type="EPICS_PV" source="XRM:SCAN:scan3.CPT"              dbrtype="DBR_NATIVE"   description="Scan 3 Current Position"/>
+
+    <Attribute name="Scan Time Start;XRM:SCAN:scanProgress:startingTimeStr;"          type="EPICS_PV" source="XRM:SCAN:scanProgress:startingTimeStr"     dbrtype="DBR_NATIVE"    description="ScanProgress Start"/>
+    <Attribute name="Scan Time Elapsed;XRM:SCAN:scanProgress:totalElapsedTimeStr;"    type="EPICS_PV" source="XRM:SCAN:scanProgress:totalElapsedTimeStr" dbrtype="DBR_NATIVE"    description="ScanProgress Elapsed"/>
+    <Attribute name="Scan Total Num;XRM:SCAN:scanProgress:Ntotal;"                    type="EPICS_PV" source="XRM:SCAN:scanProgress:Ntotal"              dbrtype="DBR_NATIVE"    description="ScanProgress NTotal"/>
+    <Attribute name="Scan Num Finished;XRM:SCAN:scanProgress:Nfinished;"              type="EPICS_PV" source="XRM:SCANscanProgress:Nfinished"            dbrtype="DBR_NATIVE"    description="ScanProgress Nfinished"/>
+</Attributes>

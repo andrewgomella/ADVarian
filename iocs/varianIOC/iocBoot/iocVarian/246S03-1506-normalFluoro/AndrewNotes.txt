@@ -1,0 +1,19 @@
+Use this to take Varian image:
+I put a shortcut on the desktop called "varian test app"
+C:\Program Files\Varian\PaxscanL06\developer\VirtCpRel64\RadPanelTest64.exe
+
+use option 3 to take an image, its the only one that will work. The rest wait for the 
+varian detector to trigger an x-ray which never happens.
+
+it will save them to 
+C:\Program Files\Varian\PaxscanL06\developer\VirtCpRel64\_SavedImages
+
+Use this info to open varian raw images in ImageJ:
+16 bit Unsigned
+
+No header
+
+3584 2816
+
+Little-endian
+

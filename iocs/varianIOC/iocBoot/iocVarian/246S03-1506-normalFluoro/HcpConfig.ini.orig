@@ -1,0 +1,30 @@
+; HcpConfig.ini is the hardware configuration file for Virtual CP software.
+; This file is specific to -- 3024 -- which uses the Pleora ethernet 
+; frame grabber module.
+; It also specifies additional configuration files required.
+
+[ReceptorControl]
+FgDll=HcpFgExPleora
+
+;Use for RAD HandSwitch
+RpDll=HcpRpMammo
+
+[HcpConfigFiles]
+HcpFile_01 = *.dat
+
+[ImageAcquisition]
+IoDll=HcpIoRad
+;PleoraBadImagePass=1
+
+
+
+[RadMode]
+;ImageLogEnable=1
+
+[VirtCp]
+
+
+[HcpFgPleora]
+FgTimeoutBoostSec=64
+
+PleoraMacAddress=00-11-1C-01-9D-64

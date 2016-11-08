@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Attributes -->
+<Attributes
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://epics.aps.anl.gov/areaDetector/attributes ../attributes.xsd"
+    >
+     <!-- camera information -->
+    <Attribute name="Image No.;"                                                type="PARAM"    source="ARRAY_COUNTER"                             datatype="INT"        description="Image counter"/>
+    <Attribute name="MaxSizeX;"                                                 type="PARAM"    source="MAX_SIZE_X"                                datatype="INT"        description="Detector X size"/>
+    <Attribute name="MaxSizeY;"                                                 type="PARAM"    source="MAX_SIZE_Y"                                datatype="INT"        description="Detector Y size"/>
+    <Attribute name="Camera Model;"                                             type="PARAM"    source="MODEL"                                     datatype="STRING"     description="Camera model"/>
+    <Attribute name="Camera Manf;"                                              type="PARAM"    source="MANUFACTURER"                              datatype="STRING"     description="Camera manufacturer"/>
+    <Attribute name="Image Time Stamp;VPFI:VARIAN:image1:TimeStamp_RBV;"        type="EPICS_PV" source="VPFI:VARIAN:image1:TimeStamp_RBV"          dbrtype="DBR_NATIVE"  description="Varian Image Stamp"/>
+    <Attribute name="Camera Gain;VPFI:VARIAN:cam1:Gain_RBV;"                     type="EPICS_PV" source="VPFI:VARIAN:cam1:Gain_RBV"                dbrtype="DBR_NATIVE"  description="Varian Gain"/>
+     <!-- xray information -->
+    <Attribute name="X-ray kVp;VPFI:OXFORD:xray:KVP_MIN;"                       type="EPICS_PV" source="VPFI:OXFORD:xray:KVP_MIN"                  dbrtype="DBR_NATIVE"  description="X-ray KVP"/>
+    <Attribute name="X-ray W;VPFI:OXFORD:xray:WATT_MIN;"                        type="EPICS_PV" source="VPFI:OXFORD:xray:WATT_MIN"                 dbrtype="DBR_NATIVE"  description="X-ray Power"/>
+    <Attribute name="X-ray ms;VPFI:OXFORD:xray:MS_RBV;"                         type="EPICS_PV" source="VPFI:OXFORD:xray:MS_RBV"                   dbrtype="DBR_NATIVE"  description="X-ray Exposure time"/>
+    <Attribute name="X-ray mAs;VPFI:OXFORD:xray:MAS_RBV;"                       type="EPICS_PV" source="VPFI:OXFORD:xray:MAS_RBV"                  dbrtype="DBR_NATIVE"  description="X-ray Flux Rate"/>
+     <!-- motor information -->
+    <Attribute name="G0:z (mm);VPFI:KOHZU:m1;"                                  type="EPICS_PV" source="VPFI:KOHZU:m1.RBV"                         dbrtype="DBR_NATIVE"      description="M1 position"/>
+    <Attribute name="G0:x (mm);VPFI:KOHZU:m2;"                                  type="EPICS_PV" source="VPFI:KOHZU:m2.RBV"                         dbrtype="DBR_NATIVE"      description="M2 position"/>
+    <Attribute name="G0:y (mm);VPFI:KOHZU:m3;"                                  type="EPICS_PV" source="VPFI:KOHZU:m3.RBV"                         dbrtype="DBR_NATIVE"      description="M3 position"/>
+    <Attribute name="G0:Rz (deg);VPFI:KOHZU:m4;"                                type="EPICS_PV" source="VPFI:KOHZU:m4.RBV"                         dbrtype="DBR_NATIVE"      description="M4 position"/>
+    <Attribute name="G0:Rx (deg);VPFI:KOHZU:m5;"                                type="EPICS_PV" source="VPFI:KOHZU:m5.RBV"                         dbrtype="DBR_NATIVE"      description="M5 position"/>
+    <Attribute name="G0:Ry (deg);VPFI:KOHZU:m6;"                                type="EPICS_PV" source="VPFI:KOHZU:m6.RBV"                         dbrtype="DBR_NATIVE"      description="M6 position"/>
+    <Attribute name="G1:z (mm);VPFI:KOHZU:m7;"                                  type="EPICS_PV" source="VPFI:KOHZU:m7.RBV"                         dbrtype="DBR_NATIVE"      description="M7 position"/>
+    <Attribute name="G1:x (mm);VPFI:KOHZU:m8;"                                  type="EPICS_PV" source="VPFI:KOHZU:m8.RBV"                         dbrtype="DBR_NATIVE"      description="M8 position"/>
+    <Attribute name="G1:y (mm);VPFI:KOHZU:m9;"                                  type="EPICS_PV" source="VPFI:KOHZU:m9.RBV"                         dbrtype="DBR_NATIVE"      description="M9 position"/>
+    <Attribute name="G1:Rz (deg);VPFI:KOHZU:m10;"                               type="EPICS_PV" source="VPFI:KOHZU:m10.RBV"                        dbrtype="DBR_NATIVE"      description="M10 position"/>
+    <Attribute name="G1:Rx (deg);VPFI:KOHZU:m11;"                               type="EPICS_PV" source="VPFI:KOHZU:m11.RBV"                        dbrtype="DBR_NATIVE"      description="M11 position"/>
+    <Attribute name="G1:Ry (deg);VPFI:KOHZU:m12;"                               type="EPICS_PV" source="VPFI:KOHZU:m12.RBV"                        dbrtype="DBR_NATIVE"      description="M12 position"/>
+    <Attribute name="G2:z (mm);VPFI:KOHZU:m13;"                                 type="EPICS_PV" source="VPFI:KOHZU:m13.RBV"                        dbrtype="DBR_NATIVE"      description="M13 position"/>
+    <Attribute name="G2:x (mm);VPFI:KOHZU:m14;"                                 type="EPICS_PV" source="VPFI:KOHZU:m14.RBV"                        dbrtype="DBR_NATIVE"      description="M14 position"/>
+    <Attribute name="G2:y (mm);VPFI:KOHZU:m15;"                                 type="EPICS_PV" source="VPFI:KOHZU:m15.RBV"                        dbrtype="DBR_NATIVE"      description="M15 position"/>
+    <Attribute name="G2:Rz (deg);VPFI:KOHZU:m16;"                               type="EPICS_PV" source="VPFI:KOHZU:m16.RBV"                        dbrtype="DBR_NATIVE"      description="M16 position"/>
+    <Attribute name="G2:Rx (deg);VPFI:KOHZU:m17;"                               type="EPICS_PV" source="VPFI:KOHZU:m17.RBV"                        dbrtype="DBR_NATIVE"      description="M17 position"/>
+    <Attribute name="G2:Ry (deg);VPFI:KOHZU:m18;"                               type="EPICS_PV" source="VPFI:KOHZU:m18.RBV"                        dbrtype="DBR_NATIVE"      description="M18 position"/>
+</Attributes>

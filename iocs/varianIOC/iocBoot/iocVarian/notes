@@ -1,0 +1,79 @@
+////////////////////////
+General:
+////////////////////////
+.VIV filetype has 2048 byte header
+
+you should call vip_io_enable() HS_STANDBY after each acq to reset the system
+with hcpiorad.dll HS_ACTIVE enables receptor for one acquistion (but the handswitch has to be pressed??)
+
+////////////////////////
+Signal Notes:
+////////////////////////
+
+panel outputs "Expose OK" to announce it is ready for x-rays
+
+Input "Expose Req" allows user to request an exposure (assumption is x-ray generator is ready to expose)
+
+vip_set_user_sync
+"intended for fluoro mode" :
+when true, the user must apply hardware signal to start acq
+
+////////////////////////
+Fluoro notes:
+////////////////////////
+Images are only acquired while prepare is TRUE, and only saved to buffers if VALID_XRAY is true !!
+
+
+////////////////////////
+sw handshaking:
+////////////////////////
+
+VIP_SW_PREPARE = True tells panel to prepare for acquisition, false tells panel no more acquisition is expected(???) (only send after acq)
+VP_SW_VALID_XRAYS = True tells panel that the xray is active , false tells panel acquistion is finished
+
+After Exposure:
+after each acquistion call HS_STANDBY to reset
+vip_query_prog_info until RFP=1 and num frames = 0
+
+
+////////////////////////
+Varian Rad Correction:
+////////////////////////
+Varian's stored corrections all have a 2048 bit offset
+Varian's gain has extra rows of pixels (can just ignore and put in normal size in imagej)
+
+Start Acquistion:
+Grab raw x-ray frame A -> Read out
+Turn off x-ray
+Grab dark field B-> Read out
+
+Retrieve stored gain file C (which is already offset corrected!) from hard drive
+
+Corrected image= (A-B) / (C)
+
+End Acquisition
+
+They also subtract out dead pixels and interpolate them
+
+
+How is stored gain file Created?
+We recommend that flat field images be acquired with a median count of 1,600 – 3,000. 
+This range will ensure that Gain calibration will meet both the upper and lower dose requirements under all modes of operation. 
+
+
+First accumulates several dark fields (they recommend 8), after accumulation it averages them. 
+Then x-ray is enabled, and as the panel reads out frames it dark field corrects them using the previous DF. 
+It then accumulates the image in a buffer for the number of images requested (they recommend 32). When finished the frame is averaged. 
+
+
+panel temperatures during test:
+
+39.75 36.38 37.13 41.00 37.00 35.13
+
+
+On the scale of several minutes:
+no hint of artifacts when subtracting dark fields in 16 image acq over 4 minutes
+
+
+
+
