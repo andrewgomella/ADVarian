@@ -30,7 +30,7 @@ varianApp_registerRecordDeviceDriver pdbbase
 # Connect to varian panel
 # Asyn port, Rad config folder, Fluoro config folder, custom1, custom2, Which folder to boot into (0 or 1), 
 # whether to run checkLink at every connection (or reconnection), maxBuffers, maxMemory, stackSize
-varianConfig("$(PORT)", "246S03-1506-normalMammo\", "246S03-1506-normalFluoro\", "246S03-1506-Mammo-single\", "246S03-1506-testing-zone\", 0, 0, 50, 0, 0 , 0 ,10)
+varianConfig("$(PORT)", "246S03-1506-normalMammo\", "246S03-1506-normalFluoro\", "246S03-1506-normalMammo\", "246S03-1506-normalFluoro\", 0, 0, 50, 0, 0 , 0 ,10)
 #asynSetTraceIOMask("$(PORT)",0,2)
 #asynSetTraceMask("$(PORT)",0,255)
 #asynSetTraceMask("$(PORT)",0,255)
