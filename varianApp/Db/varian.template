@@ -1,0 +1,528 @@
+# Database for the records specific to the Varian 3024m detector
+# Some settings such as VarianMode are dependent upon the config file
+# June 2015
+
+record(mbbo, "$(P)$(R)VarianConfig")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)VARIAN_CONFIG")
+   field(ZRST, "Varian Radiography")
+   field(ZRVL, "0")
+   field(ONST, "Varian Fluoroscopy")
+   field(ONVL, "1")
+   field(TWST, "Single Frame Radiography")
+   field(TWVL, "2")
+   field(THST, "Other")
+   field(THVL, "3")
+}
+
+record(mbbi, "$(P)$(R)VarianState")
+{
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(PORT) 0)VARIAN_STATE")
+   field(SCAN, "I/O Intr")
+   field(ZRST, "Ready")
+   field(ZRVL, "0")
+   field(ONST, "Radiography")
+   field(ONVL, "1")
+   field(TWST, "Fluoroscopy")
+   field(TWVL, "2")
+   field(THST, "Radiography Calibration")
+   field(THVL, "3")
+   field(FRST, "Fluoroscopy Calibration")
+   field(FRVL, "4")
+   field(FVST, "Check Link")
+   field(FVVL, "5")
+   field(SXST, "Connecting")
+   field(SXVL, "6")
+   field(SVST, "Disconnected")
+   field(SVVL, "7")
+   field(EIST, "Changing Mode")
+   field(EIVL, "8" )
+}
+
+record(mbbo, "$(P)$(R)VarianMode")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)VARIAN_MODE")
+   #field(PINI, "YES")
+   #field(VAL,  "0")
+   field(ZRST, "Mode 0")
+   field(ZRVL, "0")
+   field(ONST, "Mode 1")
+   field(ONVL, "1")
+   field(TWST, "Mode 2")
+   field(TWVL, "2")
+   field(THST, "Mode 3")
+   field(THVL, "3")
+   field(FRST, "Mode 4")
+   field(FRVL, "4")
+   field(FVST, "Mode 5")
+   field(FVVL, "5")
+   field(SXST, "Mode 6")
+   field(SXVL, "6")
+   field(SVST, "Mode 7")
+   field(SVVL, "7")
+   field(EIST, "Mode 8")
+   field(EIVL, "8")
+   field(NIST, "Mode 9")
+   field(NIVL, "9")
+   field(TEST, "Mode 10")
+   field(TEVL, "10")
+}
+
+record(mbbi, "$(P)$(R)VarianAcquisitionType")
+{
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(PORT) 0)VARIAN_ACQUISITION_TYPE")
+   field(SCAN, "I/O Intr")
+   field(ZRST, "Radiography With Post")
+   field(ZRVL, "0")
+   field(ONST, "Unknown")
+   field(ONVL, "1")
+   field(TWST, "Single Prepulse(2)")
+   field(TWVL, "2")
+   field(THST, "Single Prepulse(3)")
+   field(THVL, "3")
+   field(FRST, "Fluoroscopy (tomo)")
+   field(FRVL, "4")
+   field(FVST, "Unknown")
+   field(FVVL, "5")
+   field(SXST, "Unknown")
+   field(SXVL, "6")
+}
+
+record(longin, "$(P)$(R)NumberOfModes") {
+  field(DTYP, "asynInt32")
+  field(INP,  "@asyn($(PORT) 0)NUMBER_OF_MODES")
+  field(SCAN, "I/O Intr")
+}
+
+record(mbbo, "$(P)$(R)VarianModeFluoro")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)VARIAN_MODE_FLUORO")
+   field(ZRST, "1Fps")
+   field(ZRVL, "0")
+   field(ONST, "2Fps")
+   field(ONVL, "1")
+}
+
+record(stringin, "$(P)$(R)VarianModeDescription")
+{
+   field(DTYP, "asynOctetRead")
+   field(INP,  "@asyn($(PORT) 0)VARIAN_MODE_DESCRIPTION")
+   field(SCAN, "I/O Intr")
+ }
+
+record(mbbo, "$(P)$(R)DoubleMode")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)DOUBLE_MODE")
+   field(ZRST, "Standard Varian")
+   field(ZRVL, "0")
+   field(ONST, "Double Mode")
+   field(ONVL, "1")
+}
+
+record(mbbo, "$(P)$(R)DebugMode")
+{
+  field(DTYP, "asynInt32")
+  field(OUT,  "@asyn($(PORT) 0)DEBUG_MODE")
+  field(ZRST, "Off")
+  field(ZRVL, "0")
+  field(ONST, "Write file when disabled")
+  field(ONVL, "1")
+  field(TWST, "Write file continuously")
+  field(TWVL, "2")
+  field(THST, "Write file when disabled + popup")
+  field(THVL, "3")
+}
+
+record(bo, "$(P)$(R)SetCorrections") {
+  field(PINI, "YES")
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)SET_CORRECTIONS")
+}
+
+record(mbbo, "$(P)$(R)OffsetCorrection")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)OFFSET_CORRECTION")
+   field(VAL,  "1")
+   field(ZRST, "Off")
+   field(ZRVL, "0")
+   field(ONST, "On")
+   field(ONVL, "1")
+}
+
+record(mbbi, "$(P)$(R)OffsetCorrection_RBV")
+{
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(PORT) 0)OFFSET_CORRECTION")
+   field(ZRST, "Off")
+   field(ZRVL, "0")
+   field(ONST, "On")
+   field(ONVL, "1")
+   field(SCAN, "I/O Intr")
+}
+
+record(mbbo, "$(P)$(R)GainCorrection")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)GAIN_CORRECTION")
+   field(VAL,  "1")
+   field(ZRST, "Off")
+   field(ZRVL, "0")
+   field(ONST, "On")
+   field(ONVL, "1")
+}
+
+record(mbbi, "$(P)$(R)GainCorrection_RBV")
+{
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(PORT) 0)GAIN_CORRECTION")
+   field(ZRST, "Off")
+   field(ZRVL, "0")
+   field(ONST, "On")
+   field(ONVL, "1")
+   field(SCAN, "I/O Intr")
+}
+
+record(mbbo, "$(P)$(R)DefectCorrection")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)DEFECT_CORRECTION")
+   field(VAL,  "1")
+   field(ZRST, "Off")
+   field(ZRVL, "0")
+   field(ONST, "On")
+   field(ONVL, "1")
+}
+
+record(mbbi, "$(P)$(R)DefectCorrection_RBV")
+{
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(PORT) 0)DEFECT_CORRECTION")
+   field(ZRST, "Off")
+   field(ZRVL, "0")
+   field(ONST, "On")
+   field(ONVL, "1")
+   field(SCAN, "I/O Intr")
+}
+
+record(mbbo, "$(P)$(R)FluoroCorrections")
+{
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT) 0)FLUORO_CORRECTIONS")
+   field(ZRST, "Off")
+   field(ZRVL, "0")
+   field(ONST, "On")
+   field(ONVL, "1")
+}
+
+record(ai, "$(P)$(R)PrepareTime")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)PREPARE_TIME")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)FirstFrameTime")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)FIRST_FRAME_TIME")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)SecondFrameTime")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)SECOND_FRAME_TIME")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)EndRadiographyTime")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)END_RADIOGRAPHY_TIME")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)VarianFrameRate")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)VARIAN_FRAME_RATE")
+   field(PREC, "3")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)Temp1")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)TEMP1")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)Temp2")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)TEMP2")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)Temp3")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)TEMP3")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)Temp4")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)TEMP4")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)Temp5")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)TEMP5")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)Temp6")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)TEMP6")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(bo, "$(P)$(R)SaveRaw") {
+  field(PINI, "YES")
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)SAVE_RAW")
+}
+
+record(bo, "$(P)$(R)SaveOffset") {
+  field(PINI, "YES")
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)SAVE_OFFSET")
+}
+
+record(bo, "$(P)$(R)SavePreview") {
+  field(PINI, "YES")
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)SAVE_PREVIEW")
+}
+
+record(bo, "$(P)$(R)SaveCorrected") {
+  field(PINI, "YES")
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)SAVE_CORRECTED")
+}
+
+record(bo, "$(P)$(R)AnalogOffsetCal") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)ANALOG_OFFSET_CAL")
+}
+
+record(bo, "$(P)$(R)CheckPaxscanLink") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)CHECK_PAXSCAN_LINK")
+}
+
+record(bo, "$(P)$(R)GainCal") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)GAIN_CAL")
+}
+
+record(longout, "$(P)$(R)GainCalNumOffsets") {
+  field(PINI, "YES")
+  field(VAL,  "10")
+  field(DTYP, "asynInt32")
+  field(OUT,  "@asyn($(PORT) 0)GAIN_CAL_NUM_OFFSETS")
+}
+
+record(longout, "$(P)$(R)GainCalNumFlats") {
+  field(PINI, "YES")
+  field(VAL,  "32")
+  field(DTYP, "asynInt32")
+  field(OUT,  "@asyn($(PORT) 0)GAIN_CAL_NUM_FLATS")
+}
+
+record(bi, "$(P)$(R)Complete") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "No")
+  field(ONAM, "Yes")
+  field(INP,  "@asyn($(PORT) 0)COMPLETE")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "$(P)$(R)ReadyForPulse") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "No")
+  field(ONAM, "Yes")
+  field(INP,  "@asyn($(PORT) 0)READY_FOR_PULSE")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "$(P)$(R)HandswitchState") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Idle")
+  field(ONAM, "Active")
+  field(INP,  "@asyn($(PORT) 0)HANDSWITCH_STATE")
+  field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(P)$(R)NumFrames") {
+  field(DTYP, "asynInt32")
+  field(INP,  "@asyn($(PORT) 0)NUM_FRAMES")
+  field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(P)$(R)NumPulses") {
+  field(DTYP, "asynInt32")
+  field(INP,  "@asyn($(PORT) 0)NUM_PULSES")
+  field(SCAN, "I/O Intr")
+}
+
+record(longin, "$(P)$(R)FirmwareVersion") {
+  field(PINI, "YES")
+  field(DTYP, "asynInt32")
+  field(INP,  "@asyn($(PORT) 0)FIRMWARE_VERSION")
+  field(SCAN, "I/O Intr")
+}
+
+record(stringin, "$(P)$(R)BoardSerialNumber") {
+  field(PINI, "YES")
+  field(DTYP, "asynOctetRead")
+  field(INP,  "@asyn($(PORT) 0)BOARD_SERIAL_NUMBER")
+  field(SCAN, "I/O Intr")
+}
+
+record(stringin, "$(P)$(R)ReceptorConfigPath") {
+  field(PINI, "YES")
+  field(DTYP, "asynOctetRead")
+  field(INP,  "@asyn($(PORT) 0)RECEPTOR_CONFIG_PATH")
+  field(SCAN, "I/O Intr")
+}
+
+record(stringin, "$(P)$(R)MacAddress") {
+  field(PINI, "YES")
+  field(DTYP, "asynOctetRead")
+  field(INP,  "@asyn($(PORT) 0)MAC_ADDRESS")
+  field(SCAN, "I/O Intr")
+}
+
+record(stringin, "$(P)$(R)IpAddress") {
+  field(PINI, "YES")
+  field(DTYP, "asynOctetRead")
+  field(INP,  "@asyn($(PORT) 0)IP_ADDRESS")
+  field(SCAN, "I/O Intr")
+}
+
+record(bo, "$(P)$(R)ExtractOffsetFrame") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)EXTRACT_OFFSET")
+}
+
+record(bo, "$(P)$(R)ExtractGainFrame") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)EXTRACT_GAIN")
+}
+
+record(bo, "$(P)$(R)ExtractDefectFrame") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)EXTRACT_DEFECT")
+}
+
+record(bo, "$(P)$(R)ExtractAuxDefectFrame") {
+  field(DTYP, "asynInt32")
+  field(ZNAM, "Disable")
+  field(ONAM, "Enable")
+  field(OUT,  "@asyn($(PORT) 0)EXTRACT_AUX_DEFECT")
+}
+
+record(ai, "$(P)$(R)OffsetMedian")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)OFFSET_MEDIAN")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)OffsetStdDev")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)OFFSET_STD_DEV")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)GainMedian")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)GAIN_MEDIAN")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+   
+}
+
+record(ai, "$(P)$(R)GainStdDev")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)GAIN_STD_DEV")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P)$(R)GainScaling")
+{
+   field(DTYP, "asynFloat64")
+   field(INP,  "@asyn($(PORT) 0)GAIN_SCALING")
+   field(PREC, "2")
+   field(SCAN, "I/O Intr")
+}
+
+record(stringin, "$(P)$(R)TimeLastCalibrated")
+{
+   field(DTYP, "asynOctetRead")
+   field(INP,  "@asyn($(PORT) 0)TIME_LAST_CALIBRATED")
+   field(SCAN, "I/O Intr")
+ }
+
+
