@@ -35,8 +35,16 @@ ifdef CAPUTLOG
   PROD_LIBS += caPutLog
 endif
 ifdef SNCSEQ
-	$(PROD_NAME)_DBD += devSequencer.dbd
-	PROD_LIBS += seqDev seq pv
+	# seq-2-1 and earlier has devSequencer
+	ifeq (seq-2-1, $(findstring seq-2-1, $(SNCSEQ)))
+		$(PROD_IOC)_DBD += devSequencer.dbd
+		$(PROD_IOC)_LIBS += seqDev seq pv
+	else ifeq (seq-2.1, $(findstring seq-2.1, $(SNCSEQ)))
+		$(PROD_IOC)_DBD += devSequencer.dbd
+		$(PROD_IOC)_LIBS += seqDev seq pv
+	# seq-2-2
+	else 
+		$(PROD_IOC)_LIBS += seq pv
 	$(PROD_NAME)_SRCS += ADInitSettings.st
 endif
 
