@@ -45,6 +45,7 @@ ifdef SNCSEQ
 	# seq-2-2
 	else 
 		$(PROD_IOC)_LIBS += seq pv
+	endif
 	$(PROD_NAME)_SRCS += ADInitSettings.st
 endif
 
