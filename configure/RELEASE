@@ -2,24 +2,24 @@
 # Run "gnumake clean uninstall install" in the application
 # top directory each time this file is changed.
 
-SYN_SUPPORT=C:/epics/support
+SUPPORT=C:/epics/support
 IPL_SUPPORT=
 TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 
 # Define synApps support modules. 
-AREA_DETECTOR=$(SYN_SUPPORT)/areaDetector-2-1
-ADCORE=$(SYN_SUPPORT)/areaDetector-2-1/ADCore
-ADBINARIES=$(SYN_SUPPORT)/areaDetector-2-1/ADBinaries
-ASYN=$(SYN_SUPPORT)/asyn-4-26
-AUTOSAVE=$(SYN_SUPPORT)/autosave-5-5
-BUSY=$(SYN_SUPPORT)/busy-1-6
-CALC=$(SYN_SUPPORT)/calc-3-4-2
-DEVIOCSTATS=$(SYN_SUPPORT)/devIocStats-3-1-14
-IOCADMIN=$(SYN_SUPPORT)/devIocStats-3-1-14/iocAdmin
-SNCSEQ=$(SYN_SUPPORT)/seq-2-1-18
-SSCAN=$(SYN_SUPPORT)/sscan-2-10
-STREAM=$(SYN_SUPPORT)/stream-2-6
-#STD=$(SYN_SUPPORT)/std-3-2
+AREA_DETECTOR=$(SUPPORT)/areaDetector-2-1
+ADCORE=$(SUPPORT)/areaDetector-2-1/ADCore
+ADBINARIES=$(SUPPORT)/areaDetector-2-1/ADBinaries
+ASYN=$(SUPPORT)/asyn-4-26
+AUTOSAVE=$(SUPPORT)/autosave-5-5
+BUSY=$(SUPPORT)/busy-1-6
+CALC=$(SUPPORT)/calc-3-4-2
+DEVIOCSTATS=$(SUPPORT)/devIocStats-3-1-14
+IOCADMIN=$(SUPPORT)/devIocStats-3-1-14/iocAdmin
+SNCSEQ=$(SUPPORT)/seq-2-1-18
+SSCAN=$(SUPPORT)/sscan-2-10
+STREAM=$(SUPPORT)/stream-2-6
+#STD=$(SUPPORT)/std-3-2
 
 # EPICS_BASE usually appears last so other apps can override stuff:
 EPICS_BASE=C:/epics/base-3.14.12.5
