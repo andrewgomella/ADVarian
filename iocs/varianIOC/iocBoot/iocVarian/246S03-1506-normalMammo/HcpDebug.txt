@@ -1,36 +1,827 @@
 
-2016-03-15T13:35:10.778888-05:00
-0.001 --- 
+2017-01-18T00:51:57.260537-05:00
+0.002 --- 
 HcpImgAcq is loaded
-0.001 --- [16252]
+0.003 --- [5124]
 HcpRecCtrl is loaded
-0.002 --- [16252]
+0.006 --- [5124]
 HcpCorrections is loaded
-0.002 --- [16252]
+0.008 --- [5124]
 HcpCalibration is loaded
-0.002 --- [16252]
+0.008 --- [5124]
 VirtCp is loaded
-0.003 --- [16252]AC: RcSelectReceptorPtr=73917D70
-0.003 --- [16252]AC: Get pointer to query_prog_info
-0.003 --- [16252]AC: vip_ac_open_link returns
-0.003 --- [16256]IO: MonitorThread started CIoDrive=0x003D3F80
-0.003 --- [16256]IO: Calling MonitorLp
-0.003 --- [16256]IO: MonitorLp
-0.014 --- [16252]RP: FgGetImage=73831CB0
-0.014 --- [16252]RP: FgFluoroGetPrms=73832140
-0.015 --- [16252]FG: open_receptor_link CALLED
-0.015 --- [16252]FG: EventRecName=ammo
-0.015 --- [16252]FG: DevInitImagingSystem
-2016-03-15T13:35:10.792889-05:00
-0.015 --- FG: XML file not used. MaxIgnored=10
-8.683 --- [16252]FG: All driver modes failed
-9.183 --- [16252]FG: No Pleora IP engine found
-9.183 --- [16252]FG: Code -- 20; ErrMsg: No devices were found; Pleora source file: ..\Sources\CyDeviceFinder.cpp; line 2104; system code 0
-9.187 --- [16252]FG: Bad Image PassThrough is OFF
-9.187 --- [16252]AC: vip_ac_close_link called
-9.287 --- [16252]IO: IoEnable(0)
-9.287 --- [16252]IO: StopMonitorThread: m_threadsRunning=1
-9.287 --- [16256]IO: MonitorThread ending
-9.387 --- [16252]RP: vip_rp_close_link CALLED
-9.387 --- [16252]FG: close_link CALLED
-9.438 --- [16252]MC: EXIT vip_open_receptor_link()
+0.009 --- [5124]AC: RcSelectReceptorPtr=6E3A7D70
+0.009 --- [5124]AC: Get pointer to query_prog_info
+0.009 --- [5124]AC: vip_ac_open_link returns
+0.009 --- [3192]IO: MonitorThread started CIoDrive=0x003B56D0
+0.009 --- [3192]IO: Calling MonitorLp
+0.009 --- [3192]IO: MonitorLp
+0.035 --- [5124]RP: FgGetImage=6E2B1CB0
+0.035 --- [5124]RP: FgFluoroGetPrms=6E2B2140
+0.036 --- [5124]FG: open_receptor_link CALLED
+0.036 --- [5124]FG: EventRecName=ammo
+0.036 --- [5124]FG: DevInitImagingSystem
+2017-01-18T00:51:57.294539-05:00
+0.036 --- FG: XML file not used. MaxIgnored=10
+0.443 --- [5124]FG: EBUS driver found
+0.443 --- [5124]FG: driver path - C:\Windows\system32\DRIVERS\EbPro1000.sys
+0.443 --- [5124]FG: Driver version minimum - 2.3.1.1684; driver found - 2.3.6.2302
+0.443 --- [5124]FG: Using the existing IP address: [192.168.2.34]
+0.444 --- [5124]FG: Not using xml file; creating default configuration.
+0.445 --- [5124]FG: ENTER PlrGrabber->Connect()
+0.728 --- [5124]FG: EXIT PlrGrabber->Connect() - code 0
+0.738 --- [5124]FG: Set grabber defaults
+0.741 --- [5124]FG: Bad Image PassThrough is OFF
+0.805 --- [5124]FG: WriteGPIO - set=0; clear=15
+0.805 --- [5124]FG: granular=2; width=11us
+0.805 --- [5124]FG: EventName created = Hcp_ammo_00 for idx=0
+0.805 --- [5124]FG: EventName created = Hcp_ammo_02 for idx=2
+0.805 --- [5124]FG: EventName created = Hcp_ammo_01 for idx=1
+0.806 --- [5124]RP: vip_rp_init_config CALLED; configData=0x0041dbd0; numModes=5
+2017-01-18T00:51:58.064583-05:00
+0.806 --- RP: vip_rp_init_config CALLED; configData=0x0041dbd0; numModes=5
+0.806 --- [5124]RP: vip_rp_get_rec_specific_info CALLED; mode=0
+0.806 --- [5124]RP: vip_rp_get_rec_specific_info CALLED; mode=1
+0.806 --- [5124]RP: vip_rp_get_rec_specific_info CALLED; mode=2
+0.806 --- [5124]RP: vip_rp_get_rec_specific_info CALLED; mode=3
+0.806 --- [5124]RP: vip_rp_get_rec_specific_info CALLED; mode=4
+0.806 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+0.895 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=1
+0.985 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=2
+1.072 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=3
+1.160 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=4
+1.181 --- [5124]AC: vip_ac_io_get_dll_version called
+1.181 --- [5124]IO: vip_io_get_dll_version
+1.181 --- [5124]RP: vip_rp_get_dll_version CALLED
+1.181 --- [5124]CA: vip_ca_get_dll_version CALLED
+1.181 --- [5124]MC: Dll version VirtCp64 -- Rev L06.1, Build 622; Nov 21 2013 22:08:10
+2017-01-18T00:51:58.439604-05:00
+1.181 --- MC: Dll version HcpImgAcq64 -- Rev L06.1, Build 622;  Nov 21 2013, 22:08:16
+1.181 --- [5124]MC: Dll version HcpIoRad64 -- Rev L06.1, Build 622;  Nov 21 2013, 22:07:55
+1.181 --- [5124]MC: Dll version HcpRecCtrl -- Rev L06.1, Build 622;  Nov 21 2013, 22:08:05
+1.181 --- [5124]MC: Dll version HcpRpRad64 -- Rev L06.1, Build 622;  Nov 21 2013, 22:07:48
+1.181 --- [5124]MC: Dll version HcpFgExPleora64 -- Rev L06.1, Build 622;  Nov 21 2013, 22:08:19
+1.181 --- [5124]MC: Dll version Pleora Info -- Fw-5.05.02;Device-7;Module-6.97;Driver-EBUS2.3.6.2302
+1.181 --- [5124]MC: Dll version HcpCorrections64 -- Rev L06.1,  Build 622;  Nov 21 2013, 22:08:22
+1.181 --- [5124]MC: Dll version Corrections64 -- Rev L06.1, Build 622;  Nov 21 2013, 22:07:34
+1.181 --- [5124]MC: Dll version HcpCalibration64 -- Rev L06.1, Build 622;  Nov 21 2013, 22:08:29
+1.181 --- [5124]MC: Dll version  -- 
+1.181 --- [5124]AC: vip_ac_set_hw_config called
+1.181 --- [5124]RP: vip_rp_set_hw_config CALLED
+1.181 --- [5124]FG: set_hw_config CALLED
+1.181 --- [5124]CA: vip_ca_set_hw_config CALLED
+1.181 --- [5124]CA: GFrmStartAvailable=0
+1.181 --- [5124]RP: vip_rp_select_mode CALLED; mode=0
+2017-01-18T00:51:58.439604-05:00
+1.181 --- RP: mode=0 g_fluoroModeSelected=0
+1.181 --- [5124]RP: SetRadModeInfo(mode=0, fluoro=0, totalImages=1)
+1.181 --- [5124]RP: Send cmd 8 0
+1.181 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+1.181 --- [5124]FG: Calling PlrSerialTransmit with 5 bytes
+1.232 --- [5124]FG: 8N1-19200
+1.282 --- [5124]serial: radctrl 0
+1.388 --- [5124]Received answer: 2
+1.388 --- [5124]RP: Success to send command 0
+1.388 --- [5124]RP: SetRadModeInfo: image (3584, 2816) = 10092544
+1.388 --- [5124]RP: Allocated offsetBuffer[10092544]
+1.388 --- [5124]Setting up receptor; please wait
+1.388 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+1.398 --- [5124]FG: Calling PlrSerialTransmit with 5 bytes
+1.398 --- [5124]serial: stop 1
+1.401 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=147; accum=147
+2017-01-18T00:51:58.659617-05:00
+1.401 --- FG: Calling PlrSerialTransmit with 147 bytes
+1.513 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=147; accum=147
+1.513 --- [5124]FG: Calling PlrSerialTransmit with 147 bytes
+1.624 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=147; accum=147
+1.624 --- [5124]FG: Calling PlrSerialTransmit with 147 bytes
+1.735 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=147; accum=147
+1.735 --- [5124]FG: Calling PlrSerialTransmit with 147 bytes
+1.848 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=147; accum=147
+1.848 --- [5124]FG: Calling PlrSerialTransmit with 147 bytes
+1.959 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+1.959 --- [5124]FG: Calling PlrSerialTransmit with 5 bytes
+1.959 --- [5124]serial: select 1
+1.963 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+1.963 --- [5124]FG: Calling PlrSerialTransmit with 5 bytes
+1.963 --- [5124]serial: run 1
+1.967 --- [5124]RP: Frame Size is 3584 x 2816
+2017-01-18T00:51:59.225649-05:00
+1.967 --- RP: Config data is 14 0 7 0 11 0 70 37 7 128 13 207 1 249
+1.967 --- [5124]FG: DevDataTransmit: buffer=0x0031e8c0; len=14; accum=14
+2.030 --- [5124]FG: Calling PlrSerialTransmit with 14 bytes
+2.030 --- [5124]serial (ignored): 0e 00 07 ..
+2.094 --- [5124]FG: fluoro_init_mode CALLED
+2.144 --- [5124]FG: WriteGPIO - set=1; clear=0
+2.244 --- [5124]FG: WriteGPIO - set=0; clear=1
+2.244 --- [5124]FG: set_frame_rate CALLED
+2.244 --- [5124]FG: CheckForFixedFrameRate() fRate=1.000
+2.244 --- [5124]FG: CheckForFixedFrameRate() oK=0
+2.244 --- [5124]FG: Setting frame rate 1.000
+2.245 --- [5124]FG: granular=254; halfWidth=65359
+2.295 --- [5124]FG: WriteGPIO - set=1; clear=0
+2.395 --- [5124]FG: WriteGPIO - set=0; clear=1
+2.395 --- [5124]FG: set_user_sync CALLED
+2.395 --- [5124]FG: fluoro_set_prms CALLED
+2017-01-18T00:51:59.653674-05:00
+2.395 --- FG: Seq Buffer[0] allocated with ptr=0x1fa40040
+2.395 --- [5124]FG: Seq Buffer[1] allocated with ptr=0x20d90040
+2.395 --- [5124]FG: Seq Buffer[2] allocated with ptr=0x220e0040
+2.395 --- [5124]FG: Seq Buffer[3] allocated with ptr=0x23430040
+2.395 --- [5124]FG: Seq Buffer[4] allocated with ptr=0x24780040
+2.395 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+2.395 --- [5124]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+2.395 --- [5124]CR: base_select_mode() entered
+2.395 --- [5124]CA: vip_ca_select_mode CALLED: mode=0
+2.395 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+2.395 --- [5124]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+2.395 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+2.395 --- [5124]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+2.395 --- [5124]CR: base_select_mode() entered
+2.395 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+2.395 --- [5124]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+2017-01-18T00:51:59.653674-05:00
+2.395 --- CR: base_select_mode() entered
+2.395 --- [5124]CR: vip_set_correction_settings() CALLED; Ofst=1; Gain=1; Dfct=1; Rotate90=0; FlipX=0, FlipY=0
+2.395 --- [5124]CR: base_set_correction_settings() entered
+2.395 --- [5124]CR: base_set_correction_settings() entered
+2.395 --- [5124]CR: base_set_correction_settings() entered
+2.395 --- [5124]CR: base_set_correction_settings() entered
+2.395 --- [5124]CR: base_set_correction_settings() entered
+2.395 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+2.395 --- [5124]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+2.395 --- [5124]CR: base_select_mode() entered
+2.395 --- [5124]MC: EXIT vip_open_receptor_link()
+2.595 --- [5124]AC: vip_ac_query_prog_info(32771)
+2.595 --- [5124]IO: query_prog_info 32771
+2.595 --- [5124]
+2.595 --- [5124]AC: vip_ac_reset_state called
+2.595 --- [5124]IO: vip_io_reset_state
+2017-01-18T00:51:59.853685-05:00
+2.595 --- IO: IoEnable(0)
+2.595 --- [5124]CIoDrive::ResetState exit
+2.595 --- [5124]FG: reset_state CALLED
+2.595 --- [5124]FG: fluoro_grabber_stop CALLED
+2.595 --- [5124]FG: In VexGrabberStop() - AlreadyStopped
+2.595 --- [5124]CR: base_reset_state() entered
+2.595 --- [5124]CA: vip_ca_reset_state CALLED
+2.595 --- [5124]RP: vip_rp_dcds_enable CALLED; enable=1
+2.595 --- [5124]RP: mode=0 g_fluoroModeSelected=0
+2.595 --- [5124]RP: SetRadModeInfo(mode=0, fluoro=0, totalImages=1)
+2.595 --- [5124]RP: Send cmd 8 0
+2.595 --- [5124]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+2.595 --- [5124]FG: Calling PlrSerialTransmit with 5 bytes
+2.595 --- [5124]serial: radctrl 0
+2.700 --- [5124]Received answer: 2
+2.700 --- [5124]RP: Success to send command 0
+2017-01-18T00:51:59.958691-05:00
+2.700 --- RP: SetRadModeInfo: image (3584, 2816) = 10092544
+2.700 --- [5124]RP: Allocated offsetBuffer[10092544]
+2.700 --- [5124]
+****  base_get_cal_info() entered
+2.700 --- [5124]RP: vip_rp_get_mode_info_ex CALLED; mode=0
+2.700 --- [5124]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+2.700 --- [5124]CR: base_select_mode() entered
+3.308 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.318 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.318 --- [1772]IO: query_prog_info 32773
+3.318 --- [1772]
+3.834 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.844 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.844 --- [1772]IO: query_prog_info 32773
+3.844 --- [1772]
+3.844 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.854 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.112757-05:00
+3.854 --- IO: query_prog_info 32773
+3.854 --- [1772]
+3.854 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.864 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.864 --- [1772]IO: query_prog_info 32773
+3.864 --- [1772]
+3.864 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.874 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.874 --- [1772]IO: query_prog_info 32773
+3.874 --- [1772]
+3.874 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.884 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.884 --- [1772]IO: query_prog_info 32773
+3.884 --- [1772]
+3.884 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.894 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.152760-05:00
+3.894 --- IO: query_prog_info 32773
+3.894 --- [1772]
+3.894 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.904 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.904 --- [1772]IO: query_prog_info 32773
+3.904 --- [1772]
+3.904 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.914 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.914 --- [1772]IO: query_prog_info 32773
+3.914 --- [1772]
+3.914 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.924 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.924 --- [1772]IO: query_prog_info 32773
+3.924 --- [1772]
+3.924 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.934 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.192762-05:00
+3.934 --- IO: query_prog_info 32773
+3.934 --- [1772]
+3.934 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.944 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.944 --- [1772]IO: query_prog_info 32773
+3.944 --- [1772]
+3.944 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.954 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.954 --- [1772]IO: query_prog_info 32773
+3.954 --- [1772]
+3.954 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.964 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.964 --- [1772]IO: query_prog_info 32773
+3.964 --- [1772]
+3.964 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.974 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.232764-05:00
+3.974 --- IO: query_prog_info 32773
+3.974 --- [1772]
+3.974 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.984 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.984 --- [1772]IO: query_prog_info 32773
+3.984 --- [1772]
+3.984 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+3.994 --- [1772]AC: vip_ac_query_prog_info(32773)
+3.994 --- [1772]IO: query_prog_info 32773
+3.994 --- [1772]
+3.994 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.004 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.004 --- [1772]IO: query_prog_info 32773
+4.004 --- [1772]
+4.004 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.014 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.272767-05:00
+4.014 --- IO: query_prog_info 32773
+4.014 --- [1772]
+4.014 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.024 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.024 --- [1772]IO: query_prog_info 32773
+4.024 --- [1772]
+4.024 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.034 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.034 --- [1772]IO: query_prog_info 32773
+4.034 --- [1772]
+4.034 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.044 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.044 --- [1772]IO: query_prog_info 32773
+4.044 --- [1772]
+4.044 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.054 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.312769-05:00
+4.054 --- IO: query_prog_info 32773
+4.054 --- [1772]
+4.054 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.064 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.064 --- [1772]IO: query_prog_info 32773
+4.064 --- [1772]
+4.064 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.074 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.074 --- [1772]IO: query_prog_info 32773
+4.074 --- [1772]
+4.074 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.084 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.084 --- [1772]IO: query_prog_info 32773
+4.084 --- [1772]
+4.084 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.094 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.352771-05:00
+4.094 --- IO: query_prog_info 32773
+4.094 --- [1772]
+4.094 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.104 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.104 --- [1772]IO: query_prog_info 32773
+4.104 --- [1772]
+4.104 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.114 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.114 --- [1772]IO: query_prog_info 32773
+4.114 --- [1772]
+4.114 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.124 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.124 --- [1772]IO: query_prog_info 32773
+4.124 --- [1772]
+4.124 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.134 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.392773-05:00
+4.134 --- IO: query_prog_info 32773
+4.134 --- [1772]
+4.134 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.144 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.144 --- [1772]IO: query_prog_info 32773
+4.144 --- [1772]
+4.144 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.154 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.154 --- [1772]IO: query_prog_info 32773
+4.154 --- [1772]
+4.154 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.164 --- [1772]AC: vip_ac_query_prog_info(32773)
+4.164 --- [1772]IO: query_prog_info 32773
+4.164 --- [1772]
+4.164 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+4.174 --- [1772]AC: vip_ac_query_prog_info(32773)
+2017-01-18T00:52:01.432776-05:00
+4.174 --- IO: query_prog_info 32773
+4.174 --- [1772]
+13.815 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+13.825 --- [1772]AC: vip_ac_query_prog_info(32773)
+13.825 --- [1772]IO: query_prog_info 32773
+13.825 --- [1772]
+13.825 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+13.835 --- [1772]AC: vip_ac_query_prog_info(32773)
+13.835 --- [1772]IO: query_prog_info 32773
+13.835 --- [1772]
+13.835 --- [1772]AC: vip_ac_select_mode(1)
+13.835 --- [1772]AC: Setting m_numFramesToGet=1
+13.835 --- [1772]RP: vip_rp_select_mode CALLED; mode=1
+13.835 --- [1772]RP: mode=1 g_fluoroModeSelected=0
+13.835 --- [1772]RP: SetRadModeInfo(mode=1, fluoro=0, totalImages=2)
+13.835 --- [1772]RP: Send cmd 8 0
+2017-01-18T00:52:11.094328-05:00
+13.835 --- FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+13.835 --- [1772]FG: Calling PlrSerialTransmit with 5 bytes
+13.835 --- [1772]serial: radctrl 0
+13.940 --- [1772]Received answer: 2
+13.940 --- [1772]RP: Success to send command 0
+13.940 --- [1772]RP: SetRadModeInfo: image (3584, 2816) = 10092544
+13.940 --- [1772]RP: Allocated offsetBuffer[10092544]
+13.940 --- [1772]Setting up receptor; please wait
+13.940 --- [1772]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+13.940 --- [1772]FG: Calling PlrSerialTransmit with 5 bytes
+13.940 --- [1772]serial: stop 2
+13.943 --- [1772]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+13.943 --- [1772]FG: Calling PlrSerialTransmit with 5 bytes
+13.943 --- [1772]serial: select 2
+13.947 --- [1772]FG: DevDataTransmit: buffer=0x003bd120; len=5; accum=5
+13.947 --- [1772]FG: Calling PlrSerialTransmit with 5 bytes
+2017-01-18T00:52:11.206335-05:00
+13.947 --- serial: run 2
+13.951 --- [1772]FG: fluoro_init_mode CALLED
+14.001 --- [1772]FG: WriteGPIO - set=1; clear=0
+14.101 --- [1772]FG: WriteGPIO - set=0; clear=1
+14.101 --- [1772]FG: set_frame_rate CALLED
+14.101 --- [1772]FG: CheckForFixedFrameRate() fRate=0.401
+14.101 --- [1772]FG: CheckForFixedFrameRate() oK=0
+14.101 --- [1772]FG: EventName created = Hcp_ammo_03 for idx=3
+14.101 --- [6560]FG: Starting FrameStartThread() - period=2496ms
+14.101 --- [6560]FG: WriteGPIO - set=0; clear=8
+14.101 --- [6560]FG: FrameStartThread - Sleep 1248
+14.172 --- [1772]FG: Setting frame rate 0.401
+14.172 --- [1772]FG: Minimum Pleora frame rate violated - Host CPU generating frame starts
+14.172 --- [1772]FG: granular=255; halfWidth=65535
+14.222 --- [1772]FG: WriteGPIO - set=1; clear=0
+14.322 --- [1772]FG: WriteGPIO - set=0; clear=1
+2017-01-18T00:52:11.581356-05:00
+14.322 --- FG: set_user_sync CALLED
+14.322 --- [1772]FG: fluoro_set_prms CALLED
+14.322 --- [1772]RP: vip_rp_get_mode_info_ex CALLED; mode=1
+14.322 --- [1772]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+14.322 --- [1772]CR: base_select_mode() entered
+14.322 --- [1772]CA: vip_ca_select_mode CALLED: mode=1
+14.322 --- [1772]RP: vip_rp_get_mode_info_ex CALLED; mode=1
+14.322 --- [1772]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+14.322 --- [1772]
+****  base_get_cal_info() entered
+14.322 --- [1772]RP: vip_rp_get_mode_info_ex CALLED; mode=1
+14.322 --- [1772]RP: Num Asics=14; Active Asics=0; First Asic=0; SplitReadoutFactor=0
+14.322 --- [1772]CR: base_select_mode() entered
+14.322 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+14.332 --- [1772]AC: vip_ac_query_prog_info(32773)
+14.332 --- [1772]IO: query_prog_info 32773
+14.332 --- [1772]
+2017-01-18T00:52:11.591357-05:00
+14.332 --- AC: nF=0 C=0 nP=0 rfp=0 0
+14.342 --- [1772]AC: vip_ac_query_prog_info(32773)
+14.342 --- [1772]IO: query_prog_info 32773
+14.342 --- [1772]
+14.342 --- [1772]AC: nF=0 C=0 nP=0 rfp=0 0
+14.352 --- [1772]AC: vip_ac_query_prog_info(32773)
+14.352 --- [1772]IO: query_prog_info 32773
+14.352 --- [1772]
+15.349 --- [6560]FG: WriteGPIO - set=8; clear=0
+15.349 --- [6560]FG: FrameStartThread - Sleep 1248
+16.597 --- [6560]FG: WriteGPIO - set=0; clear=8
+16.597 --- [6560]FG: FrameStartThread - Sleep 1248
+17.846 --- [6560]FG: WriteGPIO - set=8; clear=0
+17.846 --- [6560]FG: FrameStartThread - Sleep 1248
+19.094 --- [6560]FG: WriteGPIO - set=0; clear=8
+19.094 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:52:17.600700-05:00
+20.342 --- FG: WriteGPIO - set=8; clear=0
+20.342 --- [6560]FG: FrameStartThread - Sleep 1248
+21.590 --- [6560]FG: WriteGPIO - set=0; clear=8
+21.590 --- [6560]FG: FrameStartThread - Sleep 1248
+22.838 --- [6560]FG: WriteGPIO - set=8; clear=0
+22.838 --- [6560]FG: FrameStartThread - Sleep 1248
+24.086 --- [6560]FG: WriteGPIO - set=0; clear=8
+24.086 --- [6560]FG: FrameStartThread - Sleep 1248
+25.334 --- [6560]FG: WriteGPIO - set=8; clear=0
+25.334 --- [6560]FG: FrameStartThread - Sleep 1248
+26.582 --- [6560]FG: WriteGPIO - set=0; clear=8
+26.582 --- [6560]FG: FrameStartThread - Sleep 1248
+27.830 --- [6560]FG: WriteGPIO - set=8; clear=0
+27.830 --- [6560]FG: FrameStartThread - Sleep 1248
+29.078 --- [6560]FG: WriteGPIO - set=0; clear=8
+29.078 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:52:27.585271-05:00
+30.326 --- FG: WriteGPIO - set=8; clear=0
+30.326 --- [6560]FG: FrameStartThread - Sleep 1248
+31.574 --- [6560]FG: WriteGPIO - set=0; clear=8
+31.574 --- [6560]FG: FrameStartThread - Sleep 1248
+32.822 --- [6560]FG: WriteGPIO - set=8; clear=0
+32.822 --- [6560]FG: FrameStartThread - Sleep 1248
+34.070 --- [6560]FG: WriteGPIO - set=0; clear=8
+34.070 --- [6560]FG: FrameStartThread - Sleep 1248
+35.319 --- [6560]FG: WriteGPIO - set=8; clear=0
+35.319 --- [6560]FG: FrameStartThread - Sleep 1248
+36.567 --- [6560]FG: WriteGPIO - set=0; clear=8
+36.567 --- [6560]FG: FrameStartThread - Sleep 1248
+37.815 --- [6560]FG: WriteGPIO - set=8; clear=0
+37.815 --- [6560]FG: FrameStartThread - Sleep 1248
+39.063 --- [6560]FG: WriteGPIO - set=0; clear=8
+39.063 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:52:37.569843-05:00
+40.311 --- FG: WriteGPIO - set=8; clear=0
+40.311 --- [6560]FG: FrameStartThread - Sleep 1248
+41.559 --- [6560]FG: WriteGPIO - set=0; clear=8
+41.559 --- [6560]FG: FrameStartThread - Sleep 1248
+42.807 --- [6560]FG: WriteGPIO - set=8; clear=0
+42.807 --- [6560]FG: FrameStartThread - Sleep 1248
+44.055 --- [6560]FG: WriteGPIO - set=0; clear=8
+44.055 --- [6560]FG: FrameStartThread - Sleep 1248
+45.303 --- [6560]FG: WriteGPIO - set=8; clear=0
+45.303 --- [6560]FG: FrameStartThread - Sleep 1248
+46.551 --- [6560]FG: WriteGPIO - set=0; clear=8
+46.551 --- [6560]FG: FrameStartThread - Sleep 1248
+47.799 --- [6560]FG: WriteGPIO - set=8; clear=0
+47.799 --- [6560]FG: FrameStartThread - Sleep 1248
+49.047 --- [6560]FG: WriteGPIO - set=0; clear=8
+49.047 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:52:47.554414-05:00
+50.295 --- FG: WriteGPIO - set=8; clear=0
+50.295 --- [6560]FG: FrameStartThread - Sleep 1248
+51.543 --- [6560]FG: WriteGPIO - set=0; clear=8
+51.543 --- [6560]FG: FrameStartThread - Sleep 1248
+52.792 --- [6560]FG: WriteGPIO - set=8; clear=0
+52.792 --- [6560]FG: FrameStartThread - Sleep 1248
+54.040 --- [6560]FG: WriteGPIO - set=0; clear=8
+54.040 --- [6560]FG: FrameStartThread - Sleep 1248
+55.288 --- [6560]FG: WriteGPIO - set=8; clear=0
+55.288 --- [6560]FG: FrameStartThread - Sleep 1248
+56.536 --- [6560]FG: WriteGPIO - set=0; clear=8
+56.536 --- [6560]FG: FrameStartThread - Sleep 1248
+57.784 --- [6560]FG: WriteGPIO - set=8; clear=0
+57.784 --- [6560]FG: FrameStartThread - Sleep 1248
+59.032 --- [6560]FG: WriteGPIO - set=0; clear=8
+59.032 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:52:57.538985-05:00
+60.280 --- FG: WriteGPIO - set=8; clear=0
+60.280 --- [6560]FG: FrameStartThread - Sleep 1248
+61.528 --- [6560]FG: WriteGPIO - set=0; clear=8
+61.528 --- [6560]FG: FrameStartThread - Sleep 1248
+62.776 --- [6560]FG: WriteGPIO - set=8; clear=0
+62.776 --- [6560]FG: FrameStartThread - Sleep 1248
+64.024 --- [6560]FG: WriteGPIO - set=0; clear=8
+64.024 --- [6560]FG: FrameStartThread - Sleep 1248
+65.272 --- [6560]FG: WriteGPIO - set=8; clear=0
+65.272 --- [6560]FG: FrameStartThread - Sleep 1248
+66.520 --- [6560]FG: WriteGPIO - set=0; clear=8
+66.520 --- [6560]FG: FrameStartThread - Sleep 1248
+67.768 --- [6560]FG: WriteGPIO - set=8; clear=0
+67.768 --- [6560]FG: FrameStartThread - Sleep 1248
+69.016 --- [6560]FG: WriteGPIO - set=0; clear=8
+69.016 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:53:07.523556-05:00
+70.265 --- FG: WriteGPIO - set=8; clear=0
+70.265 --- [6560]FG: FrameStartThread - Sleep 1248
+71.513 --- [6560]FG: WriteGPIO - set=0; clear=8
+71.513 --- [6560]FG: FrameStartThread - Sleep 1248
+72.761 --- [6560]FG: WriteGPIO - set=8; clear=0
+72.761 --- [6560]FG: FrameStartThread - Sleep 1248
+74.009 --- [6560]FG: WriteGPIO - set=0; clear=8
+74.009 --- [6560]FG: FrameStartThread - Sleep 1248
+75.257 --- [6560]FG: WriteGPIO - set=8; clear=0
+75.257 --- [6560]FG: FrameStartThread - Sleep 1248
+76.505 --- [6560]FG: WriteGPIO - set=0; clear=8
+76.505 --- [6560]FG: FrameStartThread - Sleep 1248
+77.753 --- [6560]FG: WriteGPIO - set=8; clear=0
+77.753 --- [6560]FG: FrameStartThread - Sleep 1248
+79.001 --- [6560]FG: WriteGPIO - set=0; clear=8
+79.001 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:53:17.508127-05:00
+80.249 --- FG: WriteGPIO - set=8; clear=0
+80.249 --- [6560]FG: FrameStartThread - Sleep 1248
+81.497 --- [6560]FG: WriteGPIO - set=0; clear=8
+81.497 --- [6560]FG: FrameStartThread - Sleep 1248
+82.745 --- [6560]FG: WriteGPIO - set=8; clear=0
+82.745 --- [6560]FG: FrameStartThread - Sleep 1248
+83.993 --- [6560]FG: WriteGPIO - set=0; clear=8
+83.993 --- [6560]FG: FrameStartThread - Sleep 1248
+85.241 --- [6560]FG: WriteGPIO - set=8; clear=0
+85.241 --- [6560]FG: FrameStartThread - Sleep 1248
+86.489 --- [6560]FG: WriteGPIO - set=0; clear=8
+86.489 --- [6560]FG: FrameStartThread - Sleep 1248
+87.738 --- [6560]FG: WriteGPIO - set=8; clear=0
+87.738 --- [6560]FG: FrameStartThread - Sleep 1248
+88.986 --- [6560]FG: WriteGPIO - set=0; clear=8
+88.986 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:53:27.492698-05:00
+90.234 --- FG: WriteGPIO - set=8; clear=0
+90.234 --- [6560]FG: FrameStartThread - Sleep 1248
+91.482 --- [6560]FG: WriteGPIO - set=0; clear=8
+91.482 --- [6560]FG: FrameStartThread - Sleep 1248
+92.730 --- [6560]FG: WriteGPIO - set=8; clear=0
+92.730 --- [6560]FG: FrameStartThread - Sleep 1248
+93.978 --- [6560]FG: WriteGPIO - set=0; clear=8
+93.978 --- [6560]FG: FrameStartThread - Sleep 1248
+95.226 --- [6560]FG: WriteGPIO - set=8; clear=0
+95.226 --- [6560]FG: FrameStartThread - Sleep 1248
+96.474 --- [6560]FG: WriteGPIO - set=0; clear=8
+96.474 --- [6560]FG: FrameStartThread - Sleep 1248
+97.722 --- [6560]FG: WriteGPIO - set=8; clear=0
+97.722 --- [6560]FG: FrameStartThread - Sleep 1248
+98.970 --- [6560]FG: WriteGPIO - set=0; clear=8
+98.970 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:53:37.477269-05:00
+100.218 --- FG: WriteGPIO - set=8; clear=0
+100.218 --- [6560]FG: FrameStartThread - Sleep 1248
+101.466 --- [6560]FG: WriteGPIO - set=0; clear=8
+101.466 --- [6560]FG: FrameStartThread - Sleep 1248
+102.714 --- [6560]FG: WriteGPIO - set=8; clear=0
+102.714 --- [6560]FG: FrameStartThread - Sleep 1248
+103.962 --- [6560]FG: WriteGPIO - set=0; clear=8
+103.962 --- [6560]FG: FrameStartThread - Sleep 1248
+105.211 --- [6560]FG: WriteGPIO - set=8; clear=0
+105.211 --- [6560]FG: FrameStartThread - Sleep 1248
+106.459 --- [6560]FG: WriteGPIO - set=0; clear=8
+106.459 --- [6560]FG: FrameStartThread - Sleep 1248
+107.707 --- [6560]FG: WriteGPIO - set=8; clear=0
+107.707 --- [6560]FG: FrameStartThread - Sleep 1248
+108.955 --- [6560]FG: WriteGPIO - set=0; clear=8
+108.955 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:53:47.461840-05:00
+110.203 --- FG: WriteGPIO - set=8; clear=0
+110.203 --- [6560]FG: FrameStartThread - Sleep 1248
+111.451 --- [6560]FG: WriteGPIO - set=0; clear=8
+111.451 --- [6560]FG: FrameStartThread - Sleep 1248
+112.699 --- [6560]FG: WriteGPIO - set=8; clear=0
+112.699 --- [6560]FG: FrameStartThread - Sleep 1248
+113.947 --- [6560]FG: WriteGPIO - set=0; clear=8
+113.947 --- [6560]FG: FrameStartThread - Sleep 1248
+115.195 --- [6560]FG: WriteGPIO - set=8; clear=0
+115.195 --- [6560]FG: FrameStartThread - Sleep 1248
+116.443 --- [6560]FG: WriteGPIO - set=0; clear=8
+116.443 --- [6560]FG: FrameStartThread - Sleep 1248
+117.691 --- [6560]FG: WriteGPIO - set=8; clear=0
+117.691 --- [6560]FG: FrameStartThread - Sleep 1248
+118.939 --- [6560]FG: WriteGPIO - set=0; clear=8
+118.939 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:53:57.446411-05:00
+120.187 --- FG: WriteGPIO - set=8; clear=0
+120.187 --- [6560]FG: FrameStartThread - Sleep 1248
+121.435 --- [6560]FG: WriteGPIO - set=0; clear=8
+121.435 --- [6560]FG: FrameStartThread - Sleep 1248
+122.684 --- [6560]FG: WriteGPIO - set=8; clear=0
+122.684 --- [6560]FG: FrameStartThread - Sleep 1248
+123.932 --- [6560]FG: WriteGPIO - set=0; clear=8
+123.932 --- [6560]FG: FrameStartThread - Sleep 1248
+125.180 --- [6560]FG: WriteGPIO - set=8; clear=0
+125.180 --- [6560]FG: FrameStartThread - Sleep 1248
+126.428 --- [6560]FG: WriteGPIO - set=0; clear=8
+126.428 --- [6560]FG: FrameStartThread - Sleep 1248
+127.676 --- [6560]FG: WriteGPIO - set=8; clear=0
+127.676 --- [6560]FG: FrameStartThread - Sleep 1248
+128.924 --- [6560]FG: WriteGPIO - set=0; clear=8
+128.924 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:54:07.430982-05:00
+130.172 --- FG: WriteGPIO - set=8; clear=0
+130.172 --- [6560]FG: FrameStartThread - Sleep 1248
+131.420 --- [6560]FG: WriteGPIO - set=0; clear=8
+131.420 --- [6560]FG: FrameStartThread - Sleep 1248
+132.668 --- [6560]FG: WriteGPIO - set=8; clear=0
+132.668 --- [6560]FG: FrameStartThread - Sleep 1248
+133.916 --- [6560]FG: WriteGPIO - set=0; clear=8
+133.916 --- [6560]FG: FrameStartThread - Sleep 1248
+135.164 --- [6560]FG: WriteGPIO - set=8; clear=0
+135.164 --- [6560]FG: FrameStartThread - Sleep 1248
+136.412 --- [6560]FG: WriteGPIO - set=0; clear=8
+136.412 --- [6560]FG: FrameStartThread - Sleep 1248
+137.660 --- [6560]FG: WriteGPIO - set=8; clear=0
+137.660 --- [6560]FG: FrameStartThread - Sleep 1248
+138.908 --- [6560]FG: WriteGPIO - set=0; clear=8
+138.908 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:54:17.415553-05:00
+140.157 --- FG: WriteGPIO - set=8; clear=0
+140.157 --- [6560]FG: FrameStartThread - Sleep 1248
+141.405 --- [6560]FG: WriteGPIO - set=0; clear=8
+141.405 --- [6560]FG: FrameStartThread - Sleep 1248
+142.653 --- [6560]FG: WriteGPIO - set=8; clear=0
+142.653 --- [6560]FG: FrameStartThread - Sleep 1248
+143.901 --- [6560]FG: WriteGPIO - set=0; clear=8
+143.901 --- [6560]FG: FrameStartThread - Sleep 1248
+145.149 --- [6560]FG: WriteGPIO - set=8; clear=0
+145.149 --- [6560]FG: FrameStartThread - Sleep 1248
+146.397 --- [6560]FG: WriteGPIO - set=0; clear=8
+146.397 --- [6560]FG: FrameStartThread - Sleep 1248
+147.645 --- [6560]FG: WriteGPIO - set=8; clear=0
+147.645 --- [6560]FG: FrameStartThread - Sleep 1248
+148.893 --- [6560]FG: WriteGPIO - set=0; clear=8
+148.893 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:54:27.400125-05:00
+150.141 --- FG: WriteGPIO - set=8; clear=0
+150.141 --- [6560]FG: FrameStartThread - Sleep 1248
+151.389 --- [6560]FG: WriteGPIO - set=0; clear=8
+151.389 --- [6560]FG: FrameStartThread - Sleep 1248
+152.637 --- [6560]FG: WriteGPIO - set=8; clear=0
+152.637 --- [6560]FG: FrameStartThread - Sleep 1248
+153.885 --- [6560]FG: WriteGPIO - set=0; clear=8
+153.885 --- [6560]FG: FrameStartThread - Sleep 1248
+155.133 --- [6560]FG: WriteGPIO - set=8; clear=0
+155.133 --- [6560]FG: FrameStartThread - Sleep 1248
+156.381 --- [6560]FG: WriteGPIO - set=0; clear=8
+156.381 --- [6560]FG: FrameStartThread - Sleep 1248
+157.630 --- [6560]FG: WriteGPIO - set=8; clear=0
+157.630 --- [6560]FG: FrameStartThread - Sleep 1248
+158.878 --- [6560]FG: WriteGPIO - set=0; clear=8
+158.878 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:54:37.384696-05:00
+160.126 --- FG: WriteGPIO - set=8; clear=0
+160.126 --- [6560]FG: FrameStartThread - Sleep 1248
+161.374 --- [6560]FG: WriteGPIO - set=0; clear=8
+161.374 --- [6560]FG: FrameStartThread - Sleep 1248
+162.622 --- [6560]FG: WriteGPIO - set=8; clear=0
+162.622 --- [6560]FG: FrameStartThread - Sleep 1248
+163.870 --- [6560]FG: WriteGPIO - set=0; clear=8
+163.870 --- [6560]FG: FrameStartThread - Sleep 1248
+165.118 --- [6560]FG: WriteGPIO - set=8; clear=0
+165.118 --- [6560]FG: FrameStartThread - Sleep 1248
+166.366 --- [6560]FG: WriteGPIO - set=0; clear=8
+166.366 --- [6560]FG: FrameStartThread - Sleep 1248
+167.614 --- [6560]FG: WriteGPIO - set=8; clear=0
+167.614 --- [6560]FG: FrameStartThread - Sleep 1248
+168.862 --- [6560]FG: WriteGPIO - set=0; clear=8
+168.862 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:54:47.369267-05:00
+170.110 --- FG: WriteGPIO - set=8; clear=0
+170.110 --- [6560]FG: FrameStartThread - Sleep 1248
+171.358 --- [6560]FG: WriteGPIO - set=0; clear=8
+171.358 --- [6560]FG: FrameStartThread - Sleep 1248
+172.606 --- [6560]FG: WriteGPIO - set=8; clear=0
+172.606 --- [6560]FG: FrameStartThread - Sleep 1248
+173.854 --- [6560]FG: WriteGPIO - set=0; clear=8
+173.854 --- [6560]FG: FrameStartThread - Sleep 1248
+175.103 --- [6560]FG: WriteGPIO - set=8; clear=0
+175.103 --- [6560]FG: FrameStartThread - Sleep 1248
+176.351 --- [6560]FG: WriteGPIO - set=0; clear=8
+176.351 --- [6560]FG: FrameStartThread - Sleep 1248
+177.599 --- [6560]FG: WriteGPIO - set=8; clear=0
+177.599 --- [6560]FG: FrameStartThread - Sleep 1248
+178.847 --- [6560]FG: WriteGPIO - set=0; clear=8
+178.847 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:54:57.353838-05:00
+180.095 --- FG: WriteGPIO - set=8; clear=0
+180.095 --- [6560]FG: FrameStartThread - Sleep 1248
+181.343 --- [6560]FG: WriteGPIO - set=0; clear=8
+181.343 --- [6560]FG: FrameStartThread - Sleep 1248
+182.591 --- [6560]FG: WriteGPIO - set=8; clear=0
+182.591 --- [6560]FG: FrameStartThread - Sleep 1248
+183.839 --- [6560]FG: WriteGPIO - set=0; clear=8
+183.839 --- [6560]FG: FrameStartThread - Sleep 1248
+185.087 --- [6560]FG: WriteGPIO - set=8; clear=0
+185.087 --- [6560]FG: FrameStartThread - Sleep 1248
+186.335 --- [6560]FG: WriteGPIO - set=0; clear=8
+186.335 --- [6560]FG: FrameStartThread - Sleep 1248
+187.583 --- [6560]FG: WriteGPIO - set=8; clear=0
+187.583 --- [6560]FG: FrameStartThread - Sleep 1248
+188.831 --- [6560]FG: WriteGPIO - set=0; clear=8
+188.831 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:55:07.338409-05:00
+190.079 --- FG: WriteGPIO - set=8; clear=0
+190.079 --- [6560]FG: FrameStartThread - Sleep 1248
+191.327 --- [6560]FG: WriteGPIO - set=0; clear=8
+191.327 --- [6560]FG: FrameStartThread - Sleep 1248
+192.576 --- [6560]FG: WriteGPIO - set=8; clear=0
+192.576 --- [6560]FG: FrameStartThread - Sleep 1248
+193.824 --- [6560]FG: WriteGPIO - set=0; clear=8
+193.824 --- [6560]FG: FrameStartThread - Sleep 1248
+195.072 --- [6560]FG: WriteGPIO - set=8; clear=0
+195.072 --- [6560]FG: FrameStartThread - Sleep 1248
+196.320 --- [6560]FG: WriteGPIO - set=0; clear=8
+196.320 --- [6560]FG: FrameStartThread - Sleep 1248
+197.568 --- [6560]FG: WriteGPIO - set=8; clear=0
+197.568 --- [6560]FG: FrameStartThread - Sleep 1248
+198.816 --- [6560]FG: WriteGPIO - set=0; clear=8
+198.816 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:55:17.322980-05:00
+200.064 --- FG: WriteGPIO - set=8; clear=0
+200.064 --- [6560]FG: FrameStartThread - Sleep 1248
+201.312 --- [6560]FG: WriteGPIO - set=0; clear=8
+201.312 --- [6560]FG: FrameStartThread - Sleep 1248
+202.560 --- [6560]FG: WriteGPIO - set=8; clear=0
+202.560 --- [6560]FG: FrameStartThread - Sleep 1248
+203.808 --- [6560]FG: WriteGPIO - set=0; clear=8
+203.808 --- [6560]FG: FrameStartThread - Sleep 1248
+205.056 --- [6560]FG: WriteGPIO - set=8; clear=0
+205.056 --- [6560]FG: FrameStartThread - Sleep 1248
+206.304 --- [6560]FG: WriteGPIO - set=0; clear=8
+206.304 --- [6560]FG: FrameStartThread - Sleep 1248
+207.552 --- [6560]FG: WriteGPIO - set=8; clear=0
+207.552 --- [6560]FG: FrameStartThread - Sleep 1248
+208.800 --- [6560]FG: WriteGPIO - set=0; clear=8
+208.800 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:55:27.307551-05:00
+210.049 --- FG: WriteGPIO - set=8; clear=0
+210.049 --- [6560]FG: FrameStartThread - Sleep 1248
+211.297 --- [6560]FG: WriteGPIO - set=0; clear=8
+211.297 --- [6560]FG: FrameStartThread - Sleep 1248
+212.545 --- [6560]FG: WriteGPIO - set=8; clear=0
+212.545 --- [6560]FG: FrameStartThread - Sleep 1248
+213.793 --- [6560]FG: WriteGPIO - set=0; clear=8
+213.793 --- [6560]FG: FrameStartThread - Sleep 1248
+215.041 --- [6560]FG: WriteGPIO - set=8; clear=0
+215.041 --- [6560]FG: FrameStartThread - Sleep 1248
+216.289 --- [6560]FG: WriteGPIO - set=0; clear=8
+216.289 --- [6560]FG: FrameStartThread - Sleep 1248
+217.537 --- [6560]FG: WriteGPIO - set=8; clear=0
+217.537 --- [6560]FG: FrameStartThread - Sleep 1248
+218.785 --- [6560]FG: WriteGPIO - set=0; clear=8
+218.785 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:55:37.292122-05:00
+220.033 --- FG: WriteGPIO - set=8; clear=0
+220.033 --- [6560]FG: FrameStartThread - Sleep 1248
+221.281 --- [6560]FG: WriteGPIO - set=0; clear=8
+221.281 --- [6560]FG: FrameStartThread - Sleep 1248
+222.529 --- [6560]FG: WriteGPIO - set=8; clear=0
+222.529 --- [6560]FG: FrameStartThread - Sleep 1248
+223.777 --- [6560]FG: WriteGPIO - set=0; clear=8
+223.777 --- [6560]FG: FrameStartThread - Sleep 1248
+225.025 --- [6560]FG: WriteGPIO - set=8; clear=0
+225.025 --- [6560]FG: FrameStartThread - Sleep 1248
+226.273 --- [6560]FG: WriteGPIO - set=0; clear=8
+226.273 --- [6560]FG: FrameStartThread - Sleep 1248
+227.522 --- [6560]FG: WriteGPIO - set=8; clear=0
+227.522 --- [6560]FG: FrameStartThread - Sleep 1248
+228.770 --- [6560]FG: WriteGPIO - set=0; clear=8
+228.770 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:55:47.276693-05:00
+230.018 --- FG: WriteGPIO - set=8; clear=0
+230.018 --- [6560]FG: FrameStartThread - Sleep 1248
+231.266 --- [6560]FG: WriteGPIO - set=0; clear=8
+231.266 --- [6560]FG: FrameStartThread - Sleep 1248
+232.514 --- [6560]FG: WriteGPIO - set=8; clear=0
+232.514 --- [6560]FG: FrameStartThread - Sleep 1248
+233.762 --- [6560]FG: WriteGPIO - set=0; clear=8
+233.762 --- [6560]FG: FrameStartThread - Sleep 1248
+235.010 --- [6560]FG: WriteGPIO - set=8; clear=0
+235.010 --- [6560]FG: FrameStartThread - Sleep 1248
+236.258 --- [6560]FG: WriteGPIO - set=0; clear=8
+236.258 --- [6560]FG: FrameStartThread - Sleep 1248
+237.506 --- [6560]FG: WriteGPIO - set=8; clear=0
+237.506 --- [6560]FG: FrameStartThread - Sleep 1248
+238.754 --- [6560]FG: WriteGPIO - set=0; clear=8
+238.754 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:55:57.261264-05:00
+240.002 --- FG: WriteGPIO - set=8; clear=0
+240.002 --- [6560]FG: FrameStartThread - Sleep 1248
+241.250 --- [6560]FG: WriteGPIO - set=0; clear=8
+241.250 --- [6560]FG: FrameStartThread - Sleep 1248
+242.498 --- [6560]FG: WriteGPIO - set=8; clear=0
+242.498 --- [6560]FG: FrameStartThread - Sleep 1248
+243.746 --- [6560]FG: WriteGPIO - set=0; clear=8
+243.746 --- [6560]FG: FrameStartThread - Sleep 1248
+244.995 --- [6560]FG: WriteGPIO - set=8; clear=0
+244.995 --- [6560]FG: FrameStartThread - Sleep 1248
+246.243 --- [6560]FG: WriteGPIO - set=0; clear=8
+246.243 --- [6560]FG: FrameStartThread - Sleep 1248
+247.491 --- [6560]FG: WriteGPIO - set=8; clear=0
+247.491 --- [6560]FG: FrameStartThread - Sleep 1248
+248.739 --- [6560]FG: WriteGPIO - set=0; clear=8
+248.739 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:56:07.245835-05:00
+249.987 --- FG: WriteGPIO - set=8; clear=0
+249.987 --- [6560]FG: FrameStartThread - Sleep 1248
+251.235 --- [6560]FG: WriteGPIO - set=0; clear=8
+251.235 --- [6560]FG: FrameStartThread - Sleep 1248
+252.483 --- [6560]FG: WriteGPIO - set=8; clear=0
+252.483 --- [6560]FG: FrameStartThread - Sleep 1248
+253.731 --- [6560]FG: WriteGPIO - set=0; clear=8
+253.731 --- [6560]FG: FrameStartThread - Sleep 1248
+254.979 --- [6560]FG: WriteGPIO - set=8; clear=0
+254.979 --- [6560]FG: FrameStartThread - Sleep 1248
+256.227 --- [6560]FG: WriteGPIO - set=0; clear=8
+256.227 --- [6560]FG: FrameStartThread - Sleep 1248
+257.475 --- [6560]FG: WriteGPIO - set=8; clear=0
+257.475 --- [6560]FG: FrameStartThread - Sleep 1248
+258.723 --- [6560]FG: WriteGPIO - set=0; clear=8
+258.723 --- [6560]FG: FrameStartThread - Sleep 1248
+2017-01-18T00:56:17.230406-05:00
+259.971 --- FG: WriteGPIO - set=8; clear=0
+259.971 --- [6560]FG: FrameStartThread - Sleep 1248
